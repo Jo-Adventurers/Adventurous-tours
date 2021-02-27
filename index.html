@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to you in our home page</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Yellowtail&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Yellowtail&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css"> 
 </head>
 <body>
     <header>
         <div id="one"> 
-        <img id="logo" src="img/logo2.png"/>
+        <img id="logo" src="img/Image from iOS (2).jpg"/>
         <ul>
-            <li><a href="booking.html">BOOK NOW</a></li>
-            <li><a href="rateAndReviews.html">RATE US</a></li>
-            <li><a href="about-us.html">ABOUT US</a></li>
+            <li class="links"><a href="booking.html">BOOK NOW</a></li>
+            <li class="links"><a href="rateAndReviews.html">RATE US</a></li>
+            <li class=links><a href="about-us.html">ABOUT US</a></li>
+            <li id="dateTime"><span id="datetime"></span></li>
         </ul>
         </div>
         <div id ="two">
@@ -27,16 +29,15 @@
 
     </header>
     <main>
-
     </main>
     <footer>
      <div>
      <ul id="icons">
-         <li><a href=""></a></li>
-         <li><a href=""></a></li>
-         <li><a href=""></a> </li>
-         <li><a href=""></a></li>
-         <li><a href=""></a></li>
+         <li><a href=""><img src="img/fb-icon.png"/></a></li>
+         <li><a href=""><img src="img/insta-icon.png"/></a></li>
+         <li><a href=""><img src="img/twit-icon.png"/></a></li>
+         <li><a href=""><img src="img/mail-icon.png"/></a></li>
+         <li><a href=""><img src="img/gp-icon.png"/></a></li>
      </ul>
     </div>
      <p> 
@@ -44,5 +45,9 @@
      </p>
      </div>
     </footer>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script>
 </body>
 </html>
