@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to you in our home page</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Yellowtail&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Yellowtail&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css"> 
 </head>
 <body class="home">
     <header>
         <div id="one"> 
-        <img id="logo" src="img/logo2.png"/>
+        <img id="logo" src="img/Image from iOS (2).jpg"/>
         <ul>
-            <li><a href="booking.html">BOOK NOW</a></li>
-            <li><a href="rateAndReviews.html">RATE US</a></li>
-            <li><a href="about-us.html">ABOUT US</a></li>
+            <li class="links"><a href="booking.html">BOOK NOW</a></li>
+            <li class="links"><a href="rateAndReviews.html">RATE US</a></li>
+            <li class=links><a href="about-us.html">ABOUT US</a></li>
+            <li id="dateTime"><span id="datetime"></span></li>
         </ul>
         </div>
-        </header>
+        
         <div id ="two">
             <h1>Jordan Adventurous Toures</h1>
             <p> Book an adventure trip in Jordanian locations at the lowest prices !</p>
             
         </div>
-
- 
-        
-   <fieldset>
-
+  </header>
+  <main>
+  <fieldset>
+    
   <div id="slideshow1" class="slideshow-container">
     <div class="mySlides ">
       
@@ -99,6 +100,7 @@
      
       <img src="img/wadi-mujb2.jpg" style="width:100%">
       <div class="text">Wadi mujb</div>
+
     </div>
     
     <div class="mySlides ">
@@ -183,18 +185,30 @@
           
     
     </fieldset>
-     </body> 
-         
-        <script src="js/index.js"></script>
-   
-    </html>
-   
+  </main>
     <footer>
+   
+     <div>
+     <ul id="icons">
+         <li><a href=""><img src="img/fb-icon.png"/></a></li>
+         <li><a href=""><img src="img/insta-icon.png"/></a></li>
+         <li><a href=""><img src="img/twit-icon.png"/></a></li>
+         <li><a href=""><img src="img/mail-icon.png"/></a></li>
+         <li><a href=""><img src="img/gp-icon.png"/></a></li>
+     </ul>
     
      <p> 
         All rights reseved 2021 &copy - One life adventures
      </p>
      </div>
     </footer>
+ <script src="js/index.js"></script>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script>
+</body>
+</html>
+
 
 

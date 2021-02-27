@@ -9,21 +9,63 @@ body{
   background-color:#222831;
 }
 #logo{
+    width:130px;
+    height: 120px;
+    float: left;
+    border-radius:40%;
   width:130px;
   height: 130px;
   float: left;
 }
+
 #one ul {
+    width:100%;
+    vertical-align: middle;
+    padding-top:13px;
+    position:relative;
+    padding-left :770px;
+    top:55px;
+}
+.links:hover{
+    transform: rotateZ(-10deg);
+    box-shadow: 0 2px 0 #444a4d;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(.77,-0.7,.24,1.64);
+}
+#dateTime{
+    font-size:small;
+    color: #161616;
+    padding:10px;
+    border:solid black 1px;
+    border-radius:10%;
+    background:rgb(205, 217, 221);
+    animation: skew 1s cubic-bezier(0.6, -0.28, 0.735, 0.045)  infinite;
+    font-family: 'DotGothic16', sans-serif;
+}
+@keyframes skew{
+    from {transform:skewX(3deg);}
+    to { transform:skewX(-3deg);}
+
   vertical-align: middle;
   padding-top:30px;
   position: relative;
   left :290px;
   top:20px;
 }
+
+
+
+
 #one ul li {
+ display: inline-block;
+ margin-top:0px;
+ margin-left:40px;
+
 display: inline-block;
 margin-top:30px;
 margin-left:40px;
+
 }
 #one a {
 color: black;
@@ -33,30 +75,43 @@ font-size: large;
 font-weight: bold;
 }
 #one a:hover{
-color: gray;
-background-color:black;
-
+color: rgb(133, 131, 131);
 }
 #one {
-  background-color:rgb(238, 232, 232);
-  margin-bottom:50px;
-  padding-bottom:55px ;
+
+    background-color: rgb(238, 232, 232);
+    margin-bottom:50px;
+    padding-bottom:75px ;
 }
 
 #two{
-  background-image: url(https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/08/A-night-in-Wadi-Rum-ss01082017.jpg);
-  background-size:1600px 550px , auto , cover;
-  padding: 6em 0 12em 0;
-  background-repeat: no-repeat;
-  height: 750px;
-  position:relative;
-  left: auto;
-  bottom:48px;
+    background-image: url('https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/08/A-night-in-Wadi-Rum-ss01082017.jpg');
+    background-size:1600px 600px , auto , cover;
+    padding: 6em 0 12em 0;
+    background-repeat: no-repeat;
+    height:1800px;
+    position:relative;
+    bottom:48px;
+    overflow: hidden;
+    animation: nameI 3.5s  1.5s infinite ;
 
 }
 
+
+  @keyframes nameI {
+      0%{opacity: 0.9;}
+    25%{opacity:0.7;}
+      50%{opacity:0.8;}
+      75%{opacity: .0.9}
+      100%{opacity:1.4;}
+   
+}
+
+
 #two h1:hover{
-  color: white;
+
+    color: white;
+
 }
 #two h1,p {
   font-family: 'Merienda', cursive;
@@ -64,8 +119,12 @@ background-color:black;
   line-height:60px;
 }
 #two h1{
+
+    font-size: 50px;
+   color:rgb(168, 213, 228) ;
   font-size: 50px;
  color:lightblue ;
+
 }
 
 #two p{
@@ -73,19 +132,22 @@ background-color:black;
   color: rgb(212, 207, 207);
 }
 footer{
-  
-    position: static;
-    bottom: 0;
-    width: 100%;
-    
   background-color:rgb(238, 232, 232) ;
-
 }
 footer p{
 font-family:'Merienda', cursive ;
 font-size:large;
 }
+div #icons li{
+    display: inline-block;
+    width:30px;
+    height:40px;
+}
 
+#icons{
+    padding: 20px;
+    
+}
 
 /* Slideshow */
 * {box-sizing:border-box}
