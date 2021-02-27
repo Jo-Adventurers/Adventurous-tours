@@ -1,28 +1,39 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+// to make the slide apper?
+let slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+let  slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+let slideshow3=document.getElementById('slideshow3');
+slideshow3.currentSlideIndex= 1;
+showSlides(slideshow3.currentSlideIndex,slideshow3)
+
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
 }
 
-function showSlides(n) {
+function showSlides(n, slideshow) {
+  
+
+
  let i;
- let slides = document.getElementsByClassName("mySlides");
- let  dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  let  slides = slideshow.getElementsByClassName("mySlides");
+ 
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  if (n < 2 ){slideshow.currentSlideIndex= slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      slides[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+
 }
