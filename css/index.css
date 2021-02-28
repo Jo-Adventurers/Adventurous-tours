@@ -1,16 +1,21 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body{
-    text-align: center;
-    width: 100%;
-    background-color:#222831;
+  text-align: center;
+  width: 100%;
+  margin: 0%;
+  background-color:#222831;
 }
 #logo{
     width:130px;
     height: 120px;
     float: left;
     border-radius:40%;
+  width:130px;
+  height: 130px;
+  float: left;
 }
 
 #one ul {
@@ -41,6 +46,12 @@ body{
 @keyframes skew{
     from {transform:skewX(3deg);}
     to { transform:skewX(-3deg);}
+
+  vertical-align: middle;
+  padding-top:30px;
+  position: relative;
+  left :290px;
+  top:20px;
 }
 
 
@@ -50,6 +61,11 @@ body{
  display: inline-block;
  margin-top:0px;
  margin-left:40px;
+
+display: inline-block;
+margin-top:30px;
+margin-left:40px;
+
 }
 #one a {
 color: black;
@@ -62,6 +78,7 @@ font-weight: bold;
 color: rgb(133, 131, 131);
 }
 #one {
+
     background-color: rgb(238, 232, 232);
     margin-bottom:50px;
     padding-bottom:75px ;
@@ -77,7 +94,9 @@ color: rgb(133, 131, 131);
     bottom:48px;
     overflow: hidden;
     animation: nameI 3.5s  1.5s infinite ;
+
 }
+
 
   @keyframes nameI {
       0%{opacity: 0.9;}
@@ -90,26 +109,30 @@ color: rgb(133, 131, 131);
 
 
 #two h1:hover{
+
     color: white;
 
 }
 #two h1,p {
-    font-family: 'Merienda', cursive;
-    font-weight: bolder;
-    line-height:60px;
+  font-family: 'Merienda', cursive;
+  font-weight: bolder;
+  line-height:60px;
 }
 #two h1{
+
     font-size: 50px;
    color:rgb(168, 213, 228) ;
+  font-size: 50px;
+ color:lightblue ;
+
 }
 
 #two p{
-    font-size: large;
-    color: rgb(212, 207, 207);
+  font-size: large;
+  color: rgb(212, 207, 207);
 }
 footer{
-    background-color:rgb(238, 232, 232) ;
-
+  background-color:rgb(238, 232, 232) ;
 }
 footer p{
 font-family:'Merienda', cursive ;
@@ -126,5 +149,97 @@ div #icons li{
     
 }
 
+/* Slideshow */
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+#slideshow1{
+  position: relative;
+  top: -150px;
+  left: 150px;
+
+  max-width: 40%;
+  padding: auto;
+  border: 5px solid green;
+}
+#slideshow2{
+  position: relative;
+  top: -450px;
+  left: -250px;
+
+  max-width: 40%;
+  padding: 0;
+  border: 5px solid green;
+  
+  margin: 400px;
+}
+#slideshow3{
+  position: relative;
+  top: -750px;
+  left: -250px;
+
+  max-width: 40%;
+  padding: 0;
+  border: 5px solid green;
+  
+  margin: 400px;
+
+ 
+
+}
+
+.prev, .next {
+  
+  position: relative;
 
 
+  padding: 16px;
+  margin-top: auto;
+  color: rgb(252, 15, 15);
+  font-weight: bold;
+  font-size: 18px;
+
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #ff0606;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  background-color: azure;
+color: #000000;
+margin: 0px;
+
+}
+.textbeside{
+  position: relative;
+  left: 700px;
+  top: -400px;
+margin: right;
+color: brown;
+float: right;
+text-align: center;
+}
+.slideshow-container img{
+  size: 500px;
+  height: 500px;
+  width: 500px;
+}
