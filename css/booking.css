@@ -1,32 +1,161 @@
 
-  html {
-    background: linear-gradient(#8790a0, #243b55);
+html {
+  background: linear-gradient(#8790a0, #243b55);
+}
+/* styling the header */
+#logo {
+  width: 130px;
+  height: 120px;
+  float: left;
+  border-radius: 40%;
+}
+
+#one ul {
+  width: 500px;
+  vertical-align: middle;
+  padding-top: 13px;
+  position: relative;
+  padding-left: 770px;
+  top: 55px;
+}
+.links:hover {
+  transform: rotateZ(-10deg);
+  box-shadow: 0 2px 0 #444a4d;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.77, -0.7, 0.24, 1.64);
+}
+#dateTime {
+  font-size: small;
+  color: #161616;
+  padding: 10px;
+  border: solid black 1px;
+  border-radius: 10%;
+  background: rgb(205, 217, 221);
+  animation: skew 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;
+  font-family: "DotGothic16", sans-serif;
+}
+@keyframes skew {
+  from {
+    transform: skewX(3deg);
   }
-.formBox{
-    position: relative;
-    top: 90px;
-    left: 30%;
-    width: 200px;
-    padding: 100px;
-    background: rgba(0,0,0,.5);
-     box-shadow: 0 15px 50px rgba(0,0,0,.6);
-     border-radius: 5px;
-     color: cornsilk;
+  to {
+    transform: skewX(-3deg);
+  }
 }
-.formBox legend{
-    position: relative;
-    font-family: 'Kanit', sans-serif;
-    text-align: center;
-     bottom: 70px; 
+
+#one ul li {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 40px;
 }
-.formBox inbox{
-    position: relative;
+#one a {
+  color: black;
+  text-decoration: none;
+  font-family: "Merienda", cursive;
+  font-size: large;
+  font-weight: bold;
 }
-.formBox .inbox input{
-    position: relative;
-    width: 100%;
-    padding: 5px;
-    font-size: 15px;
+#one a:hover {
+  color: rgb(133, 131, 131);
+}
+#one {
+  background-color: rgb(238, 232, 232);
+  margin-bottom: 50px;
+  padding-bottom: 75px;
+}
+
+#two {
+  background-image: url("https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/08/A-night-in-Wadi-Rum-ss01082017.jpg");
+  background-size: 1600px 600px, auto, cover;
+  padding: 6em 0 12em 0;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+  bottom: 48px;
+  overflow: hidden;
+  animation: nameI 3.5s 1.5s infinite;
+}
+#two h1,
+p {
+  font-family: "Merienda", cursive;
+  font-weight: bolder;
+  line-height: 60px;
+  text-align: center;
+}
+#two h1 {
+  font-size: 50px;
+  color: rgb(168, 213, 228);
+}
+
+#two p {
+  font-size: large;
+  color: rgb(212, 207, 207);
+}
+@keyframes nameI {
+  0% {
+    opacity: 0.9;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#two h1:hover {
+  color: white;
+}
+#two h1,p {
+  font-family: "Merienda", cursive;
+  font-weight: bolder;
+  line-height: 60px;
+}
+#two h1 {
+  font-size: 50px;
+  color: rgb(168, 213, 228);
+}
+
+#two p {
+  font-size: large;
+  color: rgb(212, 207, 207);
+}
+
+
+/* styling form */
+
+#formBox {
+  position: relative;
+  top: 90px;
+  left: 30%;
+  width: 200px;
+  padding: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  color: cornsilk;
+}
+#formBox legend {
+  position: relative;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  bottom: 70px;
+}
+#formBox .inbox {
+  position: relative;
+}
+#formBox .inbox input {
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
   color: #fff;
   margin-bottom: 10px;
   border: none;
@@ -34,103 +163,121 @@
   outline: none;
   background: transparent;
 }
-.formBox form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden; 
-    transition: .5s;
-    margin-top: 30px;
-    letter-spacing: 4px
-  }
-  
-  .formBox a:hover {
-    background: #3a4849;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 100px #03e9f4;
-  }
-  
-  .formBox a span {
-    position: absolute;
-    display: block;
-  }
-  
-  .formBox a span:nth-child(1) {
-    top: 3px;
-    width: 100%;
-    height: 2px;
-    background-color: #03e9f4 ;
-    animation: btn-anim1 1s linear infinite;
-  }
+#formBox form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 30px;
+  letter-spacing: 4px;
+}
 
-  .formBox a span:nth-child(2) {
-    right: 7px;
-    width: 2px;
-    height: 100%;
-    background-color: #03e9f4 ;
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s
-  }
-  
+#formBox a:hover {
+  background: #3a4849;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 100px #03e9f4;
+}
 
-  .formBox a span:nth-child(3) {
-    bottom: 3px;
-    width: 100%;
-    height: 2px;
-    background-color: #03e9f4 ;
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s
-  }
-  
+#formBox a span {
+  position: absolute;
+  display: block;
+}
 
-  .formBox a span:nth-child(4) {
-   
-    left: 7px;
-    width: 2px;
-    height: 100%;
-    background-color: #03e9f4 ;
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s
-  }
+#formBox a span:nth-child(1) {
+  top: 3px;
+  width: 100%;
+  height: 2px;
+  background-color: #03e9f4;
+  animation: btn-anim1 1s linear infinite;
+}
 
-  @keyframes btn-anim1 {
-    0% {
-      left: -100%;
-    }
-    50%,100% {
-        left: 100%;
-    }
-  }
+#formBox a span:nth-child(2) {
+  right: 7px;
+  width: 2px;
+  height: 100%;
+  background-color: #03e9f4;
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
 
-  @keyframes btn-anim2 {
-    0% {
-      top: -100%;
-    }
-    50%,100% {
-      top: 100%;
-    }
-  }
+#formBox a span:nth-child(3) {
+  bottom: 3px;
+  width: 100%;
+  height: 2px;
+  background-color: #03e9f4;
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
 
-  @keyframes btn-anim3 {
-    0% {
-      right: -100%;
-    }
-    50%,100% {
-      right: 100%;
-    }
-  }
+#formBox a span:nth-child(4) {
+  left: 7px;
+  width: 2px;
+  height: 100%;
+  background-color: #03e9f4;
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
 
-  @keyframes btn-anim4 {
-    0% {
-      bottom: -100%;
-    }
-    50%,100% {
-      bottom: 100%;
-    }
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
   }
-  
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+/* styling the footer */
+footer {
+  background-color: rgb(238, 232, 232);
+}
+footer p {
+  font-family: "Merienda", cursive;
+  font-size: large;
+}
+div #icons li {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+}
+
+#icons {
+  padding: 20px;
+}
