@@ -7,7 +7,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Yellowtail&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css"> 
+    
   </head>
   <body>
     <header>
@@ -20,16 +20,10 @@
           <li id="dateTime"><span id="datetime"></span></li>
       </ul>
       </div>
-      
-      <div id ="two">
-          <h1>Jordan Adventurous Toures</h1>
-          <p> Book an adventure trip in Jordanian locations at the lowest prices !</p>
-          
-      </div>
 </header>
     <main>
       <div id="formBox">
-        <form>
+        <form id="form">
           <legend>information</legend>
           <div class="inbox">
             <label for="locationName">location name:</label>
@@ -41,11 +35,7 @@
             <input type="text" id="yourname" required />
             <br />
           </div>
-          <div class="inbox">
-            <label for="yourname">Your name:</label>
-            <input type="text" id="yourname" required />
-            <br />
-          </div>
+         
           <div class="inbox">
             <label for="phonenumber">phone number:</label>
             <input type="number" id="phonenumber" required />
@@ -79,6 +69,8 @@
             <span></span>
             Submit
           </a>
+          <!-- <input type="button" id="submit" value="submit" /> -->
+
         </form>
       </div>
     </main>
@@ -100,6 +92,6 @@
       </div>
      </footer>
  
-
+     <script src="js/booking.js"></script>
   </body>
 </html>

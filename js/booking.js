@@ -1,14 +1,15 @@
 `use strict`;
 
-let container=document.getElementById("formBox");
+let container=document.getElementById("form");
 let submit =document.getElementById("submit");
-submit.addEventListener('submit',booking);
+submit.addEventListener("click",booking);
 
 function booking(event){
+    console.log(event);
     event.preventDefault();
     let locationName=event.target.locationName.value;
     let yourname=event.target.yourname.value;
-    let phonenumber=event.target.phonenumber.value;
+    let phonenumber= event.target.phonenumber.value;
     let email=event.target.email.value;
     let numberofvisitors=event.target.numberofvisitors.value;
 
@@ -18,10 +19,12 @@ function booking(event){
     let Seafood=event.target.Seafood.checked;
     
     console.log(Mansaf);
+    console.log(event);
+    console.log(locationName);
 }
 
 
-    function BookingAdventure(locationName,yourname,phonenumber,numberofvisitors,meal){
+    function AdventureBooking(locationName,yourname,phonenumber,numberofvisitors,meal){
          this.locationName=locationName;
          this.yourname=yourname;
          this.phonenumber=phonenumber;
