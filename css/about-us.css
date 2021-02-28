@@ -5,6 +5,9 @@ main{
 
 }
 
+body{
+    width: 100%;
+}
 h1{
 text-align: center;
 font-size: 65px;
