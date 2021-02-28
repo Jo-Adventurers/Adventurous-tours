@@ -5,7 +5,6 @@
 body{
   text-align: center;
   width: 100%;
-  margin: 0%;
   background-color:#222831;
 }
 #logo{
@@ -13,9 +12,7 @@ body{
     height: 120px;
     float: left;
     border-radius:40%;
-  width:130px;
-  height: 130px;
-  float: left;
+ 
 }
 
 #one ul {
@@ -47,11 +44,6 @@ body{
     from {transform:skewX(3deg);}
     to { transform:skewX(-3deg);}
 
-  vertical-align: middle;
-  padding-top:30px;
-  position: relative;
-  left :290px;
-  top:20px;
 }
 
 
@@ -61,10 +53,6 @@ body{
  display: inline-block;
  margin-top:0px;
  margin-left:40px;
-
-display: inline-block;
-margin-top:30px;
-margin-left:40px;
 
 }
 #one a {
@@ -103,7 +91,7 @@ color: rgb(133, 131, 131);
     25%{opacity:0.7;}
       50%{opacity:0.8;}
       75%{opacity: .0.9}
-      100%{opacity:1.1;}
+      100%{opacity:1;}
    
 }
 
@@ -122,8 +110,7 @@ color: rgb(133, 131, 131);
 
     font-size: 50px;
    color:rgb(168, 213, 228) ;
-  font-size: 50px;
- color:lightblue ;
+  
 
 }
 
