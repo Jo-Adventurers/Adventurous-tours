@@ -72,3 +72,72 @@ function northJordan(event){
   localStorage.setItem('namePrice',JSON.stringify(namePrice));
   buttonThree.removeEventListener('click',northJordan);
 }
+
+
+// //  trip genretar
+// let firstimg=document.getElementById('img1')
+// let secoundimg=document.getElementById('img2')
+// let therdimg=document.getElementById('img3')
+// let imges=document.getElementById('imges')
+// let firstImgIndex;
+// let SecImgIndex;
+// let TrdImgIndex;
+// let imgarr=[];
+// let inlinearr=[];
+//  function RandomTrip (name,source){
+//    this.name=name
+//    this.source=source
+//    this.click=0;
+//    imgarr.push(this)
+//  }
+//  new RandomTrip ('diving','img/diving rand.jpg')
+//  new RandomTrip ('hiking','img/hiking rand.jpg')
+//  new RandomTrip ('skydiving','img/skydiving rand.jpg')
+//  new RandomTrip ( 'wadi','img/wadi ran.jpg')
+//  new RandomTrip ('petra','img/jordan-top-attractions-petra.jpg')
+//  new RandomTrip ('rum','img/jordan-top-attractions-wadi-rum.jpg')
+//  function genretarRandomImg(){
+//    let randomindex = Math.floor(Math.random()*imgarr.length )
+//    inlinearr[0]=firstImgIndex
+//    inlinearr[1]=SecImgIndex
+//    inlinearr[2]=TrdImgIndex
+//    while(inlinearr.includes(randomindex)){
+//     randomindex = Math.floor(Math.random()*imgarr.length )
+//    }
+//    return randomindex
+//  }
+//  console.log(genretarRandomImg)
+//  function renderImgs(){
+//    firstImgIndex=genretarRandomImg();
+//    SecImgIndex=genretarRandomImg();
+//    TrdImgIndex=genretarRandomImg();
+//    while (firstImgIndex === SecImgIndex || firstImgIndex === TrdImgIndex || SecImgIndex === TrdImgIndex){
+// firstImgIndex=genretarRandomImg();
+// SecImgIndex=genretarRandomImg();
+// }
+// firstimg.setAttribute('src', imgarr[firstImgIndex].source); 
+// secoundimg.setAttribute('src', imgarr[SecImgIndex].source);
+// therdimg.setAttribute('src',imgarr[TrdImgIndex].source);
+//  }
+// genretarRandomImg();
+// renderImgs();
+// imges.addEventListener('click', handleClicking)
+// function handleClicking(event){
+//   if(event.target.id===imges){
+//     imgarr[firstImgIndex].click++
+//     imgarr[SecImgIndex].click++
+//     imgarr[TrdImgIndex].click++
+//   }
+//   renderImgs();
+// }
+let generateT=document.getElementById('gr');
+generateT.addEventListener('submit',tripAdviser);
+
+ let monthArr=['2021-01','2021-02','2021-03','2021-04','2021-05','2021-06','2021-07','2021-08','2021-09','2021-10','2021-11','2021-12']
+ 
+function tripAdviser(event){
+  let month=event.target.date.value;
+  console.log(month)
+    
+  }
+  
