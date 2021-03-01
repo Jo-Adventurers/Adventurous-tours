@@ -42,6 +42,7 @@ function showSlides(n, slideshow) {
   slides[slideshow.currentSlideIndex-1].style.display = "block";  
 
 }
+ 
 //  trip genretar
 let firstimg=document.getElementById('img1')
 let secoundimg=document.getElementById('img2')
@@ -105,5 +106,42 @@ function handleClicking(event){
     imgarr[TrdImgIndex]
   }
   renderImgs();
+}
+
+
+
+//Work to link the buttons to the book now page
+
+let buttonOne=document.getElementById('buttonOne');
+buttonOne.addEventListener('click',southJordan);
+
+function southJordan(event){
+  event.preventDefault();
+
+  let namePrice=["South Jordan",50];
+  localStorage.setItem('namePrice',JSON.stringify(namePrice));
+  buttonOne.removeEventListener('click',southJordan);
+
+}
+
+let buttonTwo=document.getElementById('buttonTwo');
+buttonTwo.addEventListener('click',amman);
+
+function amman(event){
+  event.preventDefault();
+
+  let namePrice=["Amman",40];
+  localStorage.setItem('namePrice',JSON.stringify(namePrice));
+  buttonTwo.removeEventListener('click',amman);
+}
+let buttonThree=document.getElementById('buttonThree');
+buttonThree.addEventListener('click',northJordan);
+
+function northJordan(event){
+  event.preventDefault();
+
+  let namePrice=["north Jordan",50];
+  localStorage.setItem('namePrice',JSON.stringify(namePrice));
+  buttonThree.removeEventListener('click',northJordan);
 }
 
