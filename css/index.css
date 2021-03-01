@@ -6,6 +6,8 @@ body{
   text-align: center;
   width: 100%;
   background-color:#222831;
+  margin: 0;
+  padding: 0%;
 }
 #logo{
     width:130px;
@@ -77,11 +79,12 @@ color: rgb(133, 131, 131);
     background-size:1600px 600px , auto , cover;
     padding: 6em 0 12em 0;
     background-repeat: no-repeat;
-    height:1800px;
+    /* height:1800px; */
     position:relative;
     bottom:48px;
     overflow: hidden;
-    animation: nameI 3.5s  1.5s infinite ;
+    /* animation: nameI 3.5s  1.5s infinite ; */
+    margin: 0;
 
 }
 
@@ -120,6 +123,7 @@ color: rgb(133, 131, 131);
 }
 footer{
   background-color:rgb(238, 232, 232) ;
+ 
 }
 footer p{
 font-family:'Merienda', cursive ;
@@ -141,7 +145,7 @@ div #icons li{
 body {font-family: Verdana,sans-serif;margin:0}
 #slideshow1{
   position: relative;
-  top: -150px;
+  /* top: -150px; */
   left: 150px;
 
   max-width: 40%;
@@ -150,7 +154,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 }
 #slideshow2{
   position: relative;
-  top: -450px;
+  top: -400px;
   left: -250px;
 
   max-width: 40%;
@@ -229,4 +233,33 @@ text-align: center;
   size: 500px;
   height: 500px;
   width: 500px;
+}
+
+/* reandom trip */
+#imges img{
+  width: 350px;
+  height: 350px;
+}
+#imges{
+  position: relative;
+  top: -900px;
+  padding: 0;
+  margin: 0;
+}
+/* .slideshow-container{
+position: relative;
+top: -700px;
+} */
+/* main{
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+} */
+* {
+  margin: 0px;
+  padding: 0px;
 }
