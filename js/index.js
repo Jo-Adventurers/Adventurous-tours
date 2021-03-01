@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 
 
@@ -52,11 +52,13 @@ let SecImgIndex;
 let TrdImgIndex;
 let imgarr=[];
 let inlinearr=[];
+let maxclick=0
 
 
  function RandomTrip (name,source){
    this.name=name
    this.source=source
+   this.click=0;
    imgarr.push(this)
  }
  
@@ -70,6 +72,10 @@ let inlinearr=[];
 
  function genretarRandomImg(){
    let randomindex = Math.floor(Math.random()*imgarr.length )
+   inlinearr[0]=firstImgIndex
+   inlinearr[1]=SecImgIndex
+   inlinearr[2]=TrdImgIndex
+
    while(inlinearr.includes(randomindex)){
     randomindex = Math.floor(Math.random()*imgarr.length )
    }
@@ -83,7 +89,7 @@ let inlinearr=[];
    TrdImgIndex=genretarRandomImg();
    while (firstImgIndex === SecImgIndex || firstImgIndex === TrdImgIndex || SecImgIndex === TrdImgIndex){
       
-    console.log('hello')
+   
 
 firstImgIndex=genretarRandomImg();
 SecImgIndex=genretarRandomImg();
@@ -99,11 +105,43 @@ renderImgs();
 imges.addEventListener('click', handleClicking)
 
 function handleClicking(event){
-  if(event.target.id===imges){
-    imgarr[firstImgIndex]
-    imgarr[SecImgIndex]
-    imgarr[TrdImgIndex]
-  }
-  renderImgs();
+  console.log(imgarr);
+  while(maxclick<2){
+  if(event.target.id==img1){imgarr[firstImgIndex].click++;}
+  else if(event.target.id==img2){imgarr[SecImgIndex].click++;}
+  else{imgarr[TrdImgIndex].click++;}
+  
+renderImgs();
+imgarr[firstImgIndex].click=0
+imgarr[SecImgIndex].click=0
+imgarr[TrdImgIndex].click=0
+ maxclick++ }
+imges.removeEventListener('click', handleClicking)
 }
+
+
+let button =document.getElementById('button');
+button.addEventListener('click',tripAdviser);
+let monthArr=['2021-01','2021-02','2021-03','2021-04','2021-05','2021-06','2021-07','2021-08','2021-09','2021-10','2021-11','2021-12']
+
+
+
+
+
+// console.log(date12)
+
+function tripAdviser(event){
+
+  let month = document.getElementById("date").value;
+  let index = monthArr.indexOf(month) + 1;
+  if (((index >= 1 && index <= 4 )|| (index>=11 &&index<=12))&& (imgarr[3].click >=1 ||imgarr[4].click >=1 ||imgarr[5].click >=1)) {
+    console.log("cold");
+  } else if ((index >=5 && index <= 10) && (imgarr[0].click >=1 ||imgarr[1].click >=1 ||imgarr[2].click >=1)) {
+    console.log("hot");
+  } else {
+    console.log("whatever");
+  }
+
+}
+
 

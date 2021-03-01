@@ -263,3 +263,11 @@ body{
   margin: 0px;
   padding: 0px;
 }
+#date{
+  position: relative;
+ 
+}
+#tripbutton{
+  position: relative;
+  top: -850px;
+}
