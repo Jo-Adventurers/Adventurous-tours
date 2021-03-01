@@ -2,87 +2,104 @@
 <html lang="en">
   <head>
     <title>booking</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/booking.css" />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Yellowtail&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-    
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div id="one"> 
-      <img id="logo" src="img/Image from iOS (2).jpg"/>
-      <ul>
+      <div id="one">
+        <img id="logo" src="img/Image from iOS (2).jpg" />
+        <ul>
           <li class="links"><a href="index.html">Home</a></li>
           <li class="links"><a href="rateAndReviews.html">RATE US</a></li>
-          <li class=links><a href="about-us.html">ABOUT US</a></li>
+          <li class="links"><a href="about-us.html">ABOUT US</a></li>
           <li id="dateTime"><span id="datetime"></span></li>
-      </ul>
+        </ul>
       </div>
-</header>
+    </header>
     <main>
       <div id="formBox">
         <form id="form">
           <legend>information</legend>
-         
-            <label for="locationName">location name:</label>
-            <input type="text" id="locationName" required />
-            <br >
-         
-            <label for="yourname">Your name:</label>
-            <input type="text" id="yourname" required />
-            <br >
-        
-            <label for="phonenumber">phone number:</label>
-            <input type="number" id="phonenumber" required />
-            <br >
-         
-            <label for="email">Your email:</label>
-            <input type="email" id="email" required />
-            <br >
-        
-            <label for="numberofvisitors">number Of Visitors</label>
-            <input type="number" id="numberofvisitors" required />
-            <br >
-          
-              <p>check meals would you love to eat:</p>
-          <input type="checkbox" id="Mansaf" />
-          <label for="Mansaf"> Mansaf</label><br >
-          <input type="checkbox" id="Makmora" />
-          <label for="Makmora"> Makmora</label><br >
-          <input type="checkbox" id="Barbecue" />
-          <label for="Barbecue"> Barbecue</label><br >
-          <input type="checkbox" id="Seafood" />
-          <label for="Seafood">Sea food</label><br >
-       
-          <input type="submit" id="button" value="submit" />
 
+          <label for="locationName">location name:</label>
+          <input type="text" id="locationName" required />
+          <br />
+
+          <label for="yourname">Your name:</label>
+          <input type="text" id="yourname" required />
+          <br />
+
+          <label for="phonenumber">phone number:</label>
+          <input type="number" id="phonenumber" required />
+          <br />
+
+          <label for="email">Your email:</label>
+          <input type="email" id="email" required />
+          <br />
+
+          <label for="numberofvisitors">number Of Visitors</label>
+          <input type="number" id="numberofvisitors" required />
+          <br />
+
+          <p>check meals would you love to eat:</p>
+          <input type="checkbox" id="Mansaf" />
+          <label for="Mansaf"> Mansaf</label><br />
+          <input type="checkbox" id="Makmora" />
+          <label for="Makmora"> Makmora</label><br />
+          <input type="checkbox" id="Barbecue" />
+          <label for="Barbecue"> Barbecue</label><br />
+          <input type="checkbox" id="Seafood" />
+          <label for="Seafood">Sea food</label><br />
+          
+          <div id="buttoncontainer">
+            <input type="submit" id="button" value="submit" /> 
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </form>
       </div>
 
       <div id="infoBox">
-        <img src="img/images.png"/>
+        <img src="img/images.png" />
       </div>
     </main>
 
     <footer>
-   
       <div>
-      <ul id="icons">
-          <li><a href=""><img src="img/fb-icon.png"/></a></li>
-          <li><a href=""><img src="img/insta-icon.png"/></a></li>
-          <li><a href=""><img src="img/twit-icon.png"/></a></li>
-          <li><a href=""><img src="img/mail-icon.png"/></a></li>
-          <li><a href=""><img src="img/gp-icon.png"/></a></li>
-      </ul>
-     
-      <p> 
-         All rights reseved 2021 &copy - One life adventures
-      </p>
+        <ul id="icons">
+          <li>
+            <a href=""><img src="img/fb-icon.png" /></a>
+          </li>
+          <li>
+            <a href=""><img src="img/insta-icon.png" /></a>
+          </li>
+          <li>
+            <a href=""><img src="img/twit-icon.png" /></a>
+          </li>
+          <li>
+            <a href=""><img src="img/mail-icon.png" /></a>
+          </li>
+          <li>
+            <a href=""><img src="img/gp-icon.png" /></a>
+          </li>
+        </ul>
+
+        <p>All rights reseved 2021 &copy - One life adventures</p>
       </div>
-     </footer>
- 
-     <script src="js/booking.js"></script>
+    </footer>
+
+    <script src="js/booking.js"></script>
   </body>
 </html>
