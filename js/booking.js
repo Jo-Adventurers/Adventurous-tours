@@ -9,6 +9,8 @@ form.addEventListener("submit", booking);
 let numofvisitors=document.getElementById('numberofvisitors');
 // numofvisitors.addEventListener('input',capacityOfAdventure());
 
+let frames=document.getElementById('framing');
+
 let arrayOfObject = [];
 let meals = [];
 
@@ -105,22 +107,24 @@ getLocation();
 // create info box in the page
 function createInfoBox(){
   let image=document.createElement('img')
-   image.src="https://www.flaticon.com/svg/vstatic/svg/678/678307.svg?token=exp=1614588131~hmac=4872293fec7a4df70fcc61bbbe27f66d";
-    infoBox.appendChild(image);
+   image.src="https://www.flaticon.com/svg/vstatic/svg/678/678307.svg?token=exp=1614705880~hmac=24bc591af4a8f99cebbec4fff5395b74";
+   infoBox.appendChild(image);
     let ulEl=document.createElement('ul');
     infoBox.appendChild(ulEl);
 
+    let liEl2=document.createElement('li');
+    ulEl.appendChild(liEl2);
+    liEl2.textContent=`Hi  ${event.target.yourname.value}`;
+
     let liE=document.createElement('li');
     ulEl.appendChild(liE);
-    liE.textContent=`your trip in  ${setTimeOfTrip()}`;
+    liE.textContent=`your trip will be  ${setTimeOfTrip()}`;
 
     let liEl=document.createElement('li');
     ulEl.appendChild(liEl);
-    liEl.textContent=`your trip is to  ${event.target.locationName.value}`;
+    liEl.textContent=`your trip is to : ${event.target.locationName.value}`;
 
-    let liEl2=document.createElement('li');
-    ulEl.appendChild(liEl2);
-    liEl2.textContent=`your name is  ${event.target.yourname.value}`;
+   
 
     let liEl3=document.createElement('li');
     ulEl.appendChild(liEl3);
@@ -133,6 +137,7 @@ function createInfoBox(){
     let liEl5=document.createElement('li');
     ulEl.appendChild(liEl5);
     liEl5.textContent=`the number of adventures  ${event.target.numberofvisitors.value}`;
+
     let liEl8=document.createElement('li');
     ulEl.appendChild(liEl8);
     liEl8.textContent=`The total price of you trip is ${price}`
@@ -148,6 +153,7 @@ function createInfoBox(){
         liEl6.textContent=`and   ${meals[i]}`
     }
 
+frames.src="https://www.youtube.com/embed/raNozny6tjI";
 }
  
 // link the buttons in home page to this page.
@@ -197,7 +203,7 @@ return false;
 function createAlert(){
   let paragraphEl=document.createElement('p');
   infoBox.appendChild(paragraphEl);
-  paragraphEl.textContent=`not allowed to going to this trip because the maximum capacity is 20`;
+  paragraphEl.textContent=`you can't going going to this trip because the maximum capacity is 20`;
 }
 
 // date of adventure
