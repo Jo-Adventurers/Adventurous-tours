@@ -227,13 +227,13 @@ function ammanD(event){
 
 }
 let buttonfour=document.getElementById('buttonFour');
-buttonfour.addEventListener('click',wadirum);
+buttonfour.addEventListener('click', wadi);
 
-function wadirum(event){
+function wadi(event){
   event.preventDefault();
   let namePrice=["Wadi Rum",100];
   localStorage.setItem('namePrice',JSON.stringify(namePrice));
-  buttonfour.removeEventListener('click',wadirum);
+  buttonfour.removeEventListener('click',wadi);
 
 }
 
@@ -248,4 +248,20 @@ function petra(event){
   buttonfive.removeEventListener('click',petra);
 
 }
+ //slides hero Images
+ let Index = 0;
+hero();
 
+function hero() {
+  let x;
+  let y = document.getElementsByClassName("heroImagesSlides");
+  for (x = 0; x < y.length; x++) {
+    y[x].style.display = "none";  
+  }
+  Index++;
+  if (Index > y.length) {
+    Index = 1
+  }    
+  y[Index-1].style.display = "block";  
+  setTimeout(hero, 3000); 
+}
