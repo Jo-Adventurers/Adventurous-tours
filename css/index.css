@@ -31,7 +31,7 @@ body{
     width:100%;
     vertical-align: middle;
     position:relative;
-    padding-left:770px;
+    padding-left:760px;
     bottom:75px;
 }
 .links:hover{
@@ -280,122 +280,19 @@ color: rgb(44, 44, 44);
 
 /* footer */
 footer{
-  background-color:rgb(32, 30, 30) ;
+  background-color:rgb(29, 26, 26) ;
 }
-  
-#Footerlogo {
- border-radius: 70%;
- width: 80px;
- height: 80px;
- 
- 
+footer p{
+font-family:'Merienda', cursive ;
+font-size:large;
+color: yellowgreen;
+margin-top:50px;
 }
-.dropdown{
-  position: relative;
-  bottom: 8px;
+div #icons li{
+    display: inline-block;
+    width:30px;
+    height:40px;
 }
- .one{
-  text-align: left; 
- text-transform: capitalize;
- font-size: xx-large;
- color:yellowgreen;
- position: relative;
- bottom: 10px;
-} 
-
- .links1 {
-  width: 155px;
-  margin-top: 89px;
-  
-}
-
-.links1 ul  {
-  display: inline-block;
-  margin-right: 0px;
-}
-
- .links1 ul li a {
-  color:blanchedalmond;
-  font-size: 28px;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-  position: relative;
-  bottom: 100px;
-/* right:900px} */}
-
-
-.links1 ul li a:hover {
-  color:white;
-}
-.contact{
-  position: relative;
-  bottom: 20px;
-  left: 130px;} 
-
-
-.social {
-  position: relative;
-  bottom: 120px;
-  left: 680px;
-  width: 50px;
-  height: 50px;
-  font-size: xx-small;
-}
-  .display li{
-  display: inline-block;
-  position: relative;
-  top: 30px;
-  margin: 10px;
-  right: 50px;
-} 
-
-
-#line{
-  padding-top: 0;
-  position: relative;
-  bottom: 80px;
-  border-top: 1px solid blanchedalmond;
-  
-}
-.p1{
-  position: relative;
-   color: blanchedalmond;
-  font-size: x-large;
-  font-weight: lighter;
-  font-family: 'Roboto', sans-serif;
-  text-transform: capitalize;
-
-}
- 
-#tripbutton{
-  position: relative;
-  top: -850px;
-}
-
-#slideshow5  .textbeside{
- 
-  position: relative;
- top: -600px;
-}
-
-.book{
-  background-color: #4CAF50;
- border: none;
-
-  padding: 15px 32px;
-  text-decoration: none;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 13px;
-  margin: 4px 2px;
-  cursor: pointer;
- 
-}
-.textBoutm{
-  text-decoration: none;
-  font-style: italic;
-  font-family: 'Oi', cursive;
-  color: #444a4d;
+#icons{
+    padding: 20px;
 }
