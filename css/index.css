@@ -32,7 +32,7 @@ body{
     width:100%;
     vertical-align: middle;
     position:relative;
-    padding-left:760px;
+    padding-left:750px;
     bottom:75px;
 }
 .links:hover{
@@ -83,20 +83,7 @@ color: rgb(133, 131, 131);
     position: relative;
     bottom: 50px;
     height:600px;
-
-
-  }
-
-/* #two{
-    background-image: url('https://jordantrail.org/wp-content/uploads/2020/10/Ali-Barqawi-Studios-Explore-Series-Travel-Adventure-Jordan-Trail-Thru-Hike-2018-Day-05-Beit-Idis-to-Rasoun-029-1.jpg');
-    background-size:1600px 600px , auto , cover;
-    padding: 14em 0 12em 0;
-    background-repeat: no-repeat;
-    position:relative;
-    bottom:48px;
-    overflow: hidden;
-    margin: 0;
-} */
+}
 
 #two h1:hover{
 
@@ -139,32 +126,43 @@ color: rgb(133, 131, 131);
 }
 #slideshow2{
   position: relative;
-  top: -400px;
-  left: -50px;
+  top: -1220px;
+  left: 110px;
   width: 100%;
   height: 100vh;
   max-width: 40%;
   margin: 400px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 700px;
+  margin-right: 600px;
+  display:inline-block;
+  flex-direction: column;
 }
 #slideshow3{
   position: relative;
-  top: -850px;
-  left: -250px;
+  top: -2500px;
+  left: -295px;
   max-width: 40%;
   padding: 0;
   margin: 400px;
 }
 #slideshow4{
   position: relative;
-  top: -1200px;
-  left: -250px;
+ top: -3900px;
+  left: 350px;
+  width: 100%;
+  height: 100vh;
   max-width: 40%;
-  padding: 0;  
   margin: 400px;
+
+
+  display:inline-block;
+  flex-direction: column;
 }
 #slideshow5{
   position: relative;
-  top: -16px;
+  top: -4800px;
   left: -250px;
   max-width: 40%;
   padding: 0;
@@ -185,20 +183,22 @@ color: rgb(133, 131, 131);
 
   border-radius: 0 3px 3px 0; 
 }
- #slideshow2 {
-   border: solid 2px black;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-bottom: 700px;
-  margin-right: 600px;
-  display:inline-block;
-  flex-direction: column;
-} 
+
 #textTwo{
   position: relative;
   right:655px;
   width:40%;
 padding: 55px;}
+
+#textThree{
+  position: relative;
+ top: -475px;
+}
+#textfour{
+  position: relative;
+  right: 1350px;
+  bottom: 485px;
+}
 
 /* Position the "next button" to the right */
 .next {
@@ -280,6 +280,23 @@ font-size: x-large;
   cursor: pointer;
   position: relative;
   bottom:25px;
+}
+#buttonTwo{
+  position: relative;
+  left: 165px;
+  top: -5px;
+}
+#buttonThree{
+  position: relative;
+  top: -5px;
+}
+#buttonFour{
+  position: relative;
+  top: -5px;
+}
+#buttonFive{
+  position: relative;
+  top: -5px;
 }
 
 
