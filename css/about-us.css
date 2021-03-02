@@ -2,15 +2,10 @@
     
     box-sizing: border-box;
   }
-  body{
-      width:100%;
-      text-align: center;
-      margin: 0%;
-      padding:0%;
-  }
   
 main{
-  
+   width: 50%;
+   height: 100%;
     padding: 100px 38px;
     position: relative;
     min-height: 100vh;
@@ -48,7 +43,7 @@ header{
      position:relative;
      /* left :400px; */
   text-align:end;
-  right: 20px;
+  right: 90px;
      bottom: 30px;
      /* padding-left: 300px; */
  
@@ -78,7 +73,8 @@ header{
  }
  .h1{
      font-family: 'Reggae One', cursive;
- 
+   position: relative;
+   left: 400px; 
  }
  #one ul li {
   display: inline-block;
@@ -112,40 +108,13 @@ header{
  text-transform: capitalize;
  
  }
-   text-align: left; 
-   text-transform: capitalize;
-   font-size: xx-large;
-   padding-top: 40px;
-   padding-left: 130px;
-   color:yellowgreen;
-   position: relative;
-   left: 5px;
-
-  }
-  #logo{
-      width:100px;
-      height: 90px;
-      float: left;
-      border-radius: 100%;
-      position: relative;
-        margin-top: 10px;
-        margin-left: 70px;
-  }
-  #one ul {
-    width:100%;
-    vertical-align:text-bottom;
-    position:relative;
-    left :400px;
-    bottom: 30px;
-    /* padding-left:400px;  */
-
 
  
 .inf{
     float: left;
     width: 680px;
     height: 350px;
-    margin: 40px 20px;
+    margin: 40px 100px;
     background-color: #f5f5f5;
     box-shadow: 2px 2px 2px 2px #ddd;
     position: relative;
@@ -153,7 +122,11 @@ header{
     }
     
     #lastInf{
-        margin-left: 550px;
+        
+        float: right;
+        position: relative;
+        top: 150px;
+        right: 250px;
     }
     
     .inf img{
@@ -171,55 +144,8 @@ header{
     font-size: xx-large;
     font-family: 'Reggae One', cursive;
     
-
     }
   
-
-}
-h1{
-text-align: center;
-font-size: 65px;
-font-family: 'Roboto', sans-serif;
-font-weight: bolder;
-color:rgb(66, 62, 62);
-text-transform: capitalize;
-
-}
-
-.inf{
-float: left;
-width: 680px;
-height: 350px;
-margin: 50px 95px;
-background-color: #f5f5f5;
-box-shadow: 2px 2px 2px 2px #ddd;
-position: relative;
-margin-top: 100px;
-/* display: inline-block; */
-}
-
-#lastInf{
-    margin-left: 550px;
-}
-
-.inf img{
-background-color: rgb(26, 26, 26);
-border-radius: 20%;
-height: 50px;
-width: 50px;
-margin-right: 10px;
-}
-
-.inf .names{
-position: absolute;
-z-index: 0;
-text-align:left;
-font-size: xx-large;
-font-family: 'Reggae One', cursive;
-
-}
-
-
 .paragraph{
     position: absolute;
     z-index: 0;
@@ -243,16 +169,23 @@ font-family: 'Reggae One', cursive;
     border-radius: 60%;
     vertical-align: middle;
     padding-top: 20px;
-    
-    
     }
-    
+
+   
+   .N1{
+       float: left;
+   }
+   .N2{
+       float: left;
+       position: relative;
+       left: 800px;
+       bottom: 980px;
+   }
     .inf p{
     padding-bottom: 15px;
     width: 400px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
-
     /* text-align: justify; */
     margin-top: 85px;
     margin-left: 241px;
@@ -265,59 +198,6 @@ font-family: 'Reggae One', cursive;
     font-size: 25px;
     margin-top: 10px;
     margin-left: 240px;
-
-    position: relative;
-    bottom: 100px;
-    left: 900px;
-}
-
-
-.links1 ul li a:hover {
-    color: rgb(252, 163, 17);
-}
-.contact{
-    position: relative;
-    bottom: 20px;
-    left: 130px;
-}
-
-
-.social {
-    position: relative;
-    color: blue;
-    bottom: 230px;
-    left: 1680px;
-    width: 50px;
-    height: 50px;
-    font-size: xx-small;
-}
-.display li{
-    display: inline-block;
-    position: relative;
-    top: 30px;
-    margin: 10px;
-    right: 50px;
-}
-.p1{
-    position: relative;
-    bottom: 400px;
-    margin-top: 0px;
-}
-#line{
-    padding-top: 0;
-    position: relative;
-    bottom: 127px;
-    width: 95%;
-    border-top: 2px solid blanchedalmond;
-
-}
-.p1{
-    position: relative;
-    bottom: 125px;
-    /* left: 800px; */
-    color: blanchedalmond;
-    font-size: x-large;
-    font-weight: lighter;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
     width: 40%;
@@ -402,7 +282,7 @@ font-family: 'Reggae One', cursive;
        font-weight: normal;
        position: relative;
        bottom: 100px;
-        left: 600px;
+        left: 800px;
     }
    
    
@@ -419,8 +299,8 @@ font-family: 'Reggae One', cursive;
    .social {
        position: relative;
        color: blue;
-       bottom: 230px;
-       left: 1280px;
+       bottom: 260px;
+       left: 1650px;
        width: 50px;
        height: 50px;
        font-size: xx-small;
@@ -449,7 +329,7 @@ font-family: 'Reggae One', cursive;
        position: relative;
        bottom: 125px;
        /* left: 800px; */
-       padding-left: 500px;
+       padding-left: 700px;
        color: blanchedalmond;
        font-size: x-large;
        font-weight: lighter;
