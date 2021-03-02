@@ -22,17 +22,16 @@ body{
   font-size: xx-large;
   padding-top: 30px;
   padding-bottom :35px; 
-  padding-left: 100px;
+  padding-left: 90px;
   color:yellowgreen;
   position: relative;
-  left: 5px;}
+}
 
 #one ul {
     width:100%;
     vertical-align: middle;
-    /* padding-top:13px; */
     position:relative;
-    padding-left :770px;
+    padding-left:770px;
     bottom:75px;
 }
 .links:hover{
@@ -46,9 +45,7 @@ body{
     font-size:large;
     color: yellowgreen;
     padding:10px;
-    /* border:solid black 1px; */
     border-radius:10%;
-    /* background:rgb(205, 217, 221); */
     animation: skew 1s cubic-bezier(0.6, -0.28, 0.735, 0.045)  infinite;
     font-family: 'DotGothic16', sans-serif;
 }
@@ -57,8 +54,6 @@ body{
     to { transform:skewX(-3deg);}
 
 }
-
-
 
 
 #one ul li {
@@ -151,7 +146,7 @@ color: rgb(133, 131, 131);
   left: -250px;
   max-width: 40%;
   padding: 0;
-  border: 5px solid  rgb(32, 30, 30);
+  border: 2px solid  rgb(32, 30, 30);
   margin: 400px;
 }
 #slideshow4{
@@ -161,15 +156,17 @@ color: rgb(133, 131, 131);
   max-width: 40%;
   padding: 0;  
   margin: 400px;
+  border: 2px solid  rgb(32, 30, 30);
 }
 #slideshow5{
   position: relative;
-  top: -1650px;
+  top: -16px;
   left: -250px;
   max-width: 40%;
   padding: 0;
   height: 450px;
   margin: 400px;
+  border: 2px solid  rgb(32, 30, 30);
 }
 
 .prev, .next {
@@ -330,7 +327,7 @@ footer{
 
 
 .links1 ul li a:hover {
-  color: rgb(252, 163, 17);
+  color:white;
 }
 .contact{
   position: relative;
