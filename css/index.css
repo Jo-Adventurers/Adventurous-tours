@@ -1,5 +1,7 @@
 *{
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 body{
@@ -123,6 +125,7 @@ color: rgb(133, 131, 131);
   top:-135px;
   max-width: 40%;
   padding: auto;
+  
 }
 #slideshow2{
   position: relative;
@@ -138,6 +141,7 @@ color: rgb(133, 131, 131);
   margin-right: 600px;
   display:inline-block;
   flex-direction: column;
+  white-space: initial;
 }
 #slideshow3{
   position: relative;
@@ -366,3 +370,10 @@ div #icons li{
 #icons{
     padding: 20px;
 }
+
+
+fieldset{
+  width: 100%;
+  margin: 0px;
+
+  padding: 0px;
