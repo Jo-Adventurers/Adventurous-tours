@@ -1,224 +1,250 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
-    
-  }
-  body{
-    text-align: center;
-    width: 100%;
-    background-color:white;
-  }
-  #logo{
-    width:130px;
-    height: 130px;
-    float: left;
-  }
-  #one ul {
-    vertical-align: middle;
-    padding-top:30px;
-    position: relative;
-    left :290px;
-    top:20px;
-  }
-  #one ul li {
-  display: inline-block;
-  margin-top:30px;
-  margin-left:40px;
-  }
-  #one a {
-  color: black;
-  text-decoration:none;
-  font-family:'Merienda', cursive;
-  font-size: large;
-  font-weight: bold;
-  }
-  #one a:hover{
-  color: gray;
-  background-color:black;
-  
-  }
-  #one {
-    background-color:rgb(238, 232, 232);
-    margin-bottom:50px;
-    padding-bottom:55px ;
-  }
-.container{
-  position: absolute;
-  top: 65%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  background-color:honeydew;
-  border-radius: 5px;
-  border:  5px solid gold;
-  
-
-    
-   
-   
 }
-.container h2{
+/* styling the header */
+
+body{
+  text-align: center;
+  width: 100%;
+  background-color:#cbe0bf;
+  margin: 0%;
+  padding: 0%;
+}
+#logo {
+  width: 90px;
+  height: 80px;
+  float: left;
+  border-radius: 40%;
+}
+#h1header {
+  text-align: left;
+  font-weight: bold;
+  font-size: xx-large;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  padding-left: 90px;
+  color: yellowgreen;
+  position: relative;
+}
+
+#one ul {
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 760px;
+  bottom: 75px;
+}
+.links:hover {
+  transform: rotateZ(-10deg);
+  box-shadow: 0 2px 0 #444a4d;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.77, -0.7, 0.24, 1.64);
+}
+#dateTime {
+  font-size: large;
+  color: yellowgreen;
+  padding: 10px;
+  border-radius: 10%;
+  animation: skew 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;
+  font-family: "DotGothic16", sans-serif;
+}
+@keyframes skew {
+  from {
+    transform: skewX(3deg);
+  }
+  to {
+    transform: skewX(-3deg);
+  }
+}
+
+#one ul li {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 40px;
+}
+#one a {
+  color: blanchedalmond;
+  text-decoration: none;
+  font-family:'Merienda', cursive;
+  font-size: medium;
+  font-weight: bold;
+}
+#one a:hover {
+  color: rgb(133, 131, 131);
+}
+#one {
+  background-color: rgb(32, 30, 30);
+}
+/* styling body */
+
+.container {
+  position: relative;
+  width: 40%;
+  height: 30%;
+  background-color:#8dad7a;
+  border-radius: 50px;
+  border: 5px solid #aac29d;
+}
+.container h2 {
   font-size: 30px;
   font-weight: 500;
-  color:rgb(17, 17, 17);
-  font-family: 'Merienda', cursive;
+  color: rgb(17, 17, 17);
+  font-family: "Merienda", cursive;
   padding-top: 10px;
-
 }
-.container .rate{
+.container .rate {
   height: 150px;
   width: 400px;
   text-align: center;
   padding-right: 10px;
   padding-top: 0%;
-    
 }
-  .rate input{
-      display: none;
-  }
- .rate label{
-    float: right;
-    font-size: 75px;
-     color: lightgray;
-    margin: 0px 5px;
-    
-
- }
+.rate input {
+  display: none;
  
- .rate label::before{
-     content:"★"
- }
+}
+.rate label {
+  float: right;
+  font-size: 75px;
+  color: lightgray;
+  margin: 0px 5px;
+}
 
- .rate input:checked ~ label{
-     color:gold;
-     
- }
- .rate input:not(:checked) ~ label:hover,
- .rate input:not(:checked) ~label:hover ~ label {
-   color: gold;
- }
+.rate label::before {
+  content: "★";
+}
 
- .rate input:checked ~ label:hover,
- .rate input:checked ~label:hover ~ label {
-   color: gold;
- }
-.rateResult::before{
-  
-  position:relative;
+.rate input:checked ~ label {
+  color: gold;
+}
+.rate input:not(:checked) ~ label:hover,
+.rate input:not(:checked) ~ label:hover ~ label {
+  color: gold;
+}
+
+.rate input:checked ~ label:hover,
+.rate input:checked ~ label:hover ~ label {
+  color: gold;
+}
+.rateResult::before {
+  position: relative;
   float: left;
- content:"";
- width:100%;
+  content: "";
+  width: 100%;
   left: 50%;
-  transform:translateX(-50%);
+  transform: translateX(-50%);
   bottom: -30px;
   font-size: 30px;
   font-weight: 500;
-  color:gold;
-  font-family: 'Merienda', cursive;
+  color: gold;
+  font-family: "Merienda", cursive;
   display: none;
- 
- }
- .rate input:checked ~ .rateResult::before{
-   display: block;
- }
+}
+.rate input:checked ~ .rateResult::before {
+  display: block;
+}
 
- .rate #five:checked ~ .rateResult::before{
-   content: "It's Greate  😍";
- }
+.rate #five:checked ~ .rateResult::before {
+  content: "It's Greate  😍";
+}
 
- .rate #four:checked ~ .rateResult::before{
-   content: "Awesome 😉";
- }
+.rate #four:checked ~ .rateResult::before {
+  content: "Awesome 😉";
+}
 
- .rate #three:checked ~.rateResult::before{
-   content: "That's Good 😊";
- }
+.rate #three:checked ~ .rateResult::before {
+  content: "That's Good 😊";
+}
 
- .rate #two:checked ~ .rateResult::before{
-   content: "Mmmm  😞";
- }
- .rate #one:checked ~ .rateResult::before{
-   content: " Sorry for That 😪";
- }
+.rate #two:checked ~ .rateResult::before {
+  content: "Mmmm  😞";
+}
+.rate #one:checked ~ .rateResult::before {
+  content: " Sorry for That 😪";
+}
 
- form textarea {
-  height: 100%;
-  width: 100%;
-  color:black;
+form textarea {
+  height: 90%;
+  width: 90%;
+  color: black;
   border: 1px solid gray;
   border-radius: 5px;
   padding: 10px;
   font-size: 17px;
   resize: none;
-  
- }
+  background-color:#8dad7a;
+  margin: 5px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
 
- form .btn{
+form .btn {
   height: 45px;
   width: 100%;
   margin: 15px 0;
- }
- .btn button{
-  height: 100%;
-  width: 100%;
-  border: 1px solid ghostwhite;
+ 
+}
+.btn button {
+ 
+  border: 1px solid rgb(189, 214, 189);
   border-radius: 5px;
   outline: none;
-  background: lightgray;
-  color:black;
+  background-color:#8dad7a;
+  color: black;
   font-size: 17px;
   font-weight: 500;
   cursor: pointer;
-  font-family: 'Merienda', cursive;
-  
-  
- }
- .btn button:hover{
-  background: lightslategrey;
+  font-family: "Merienda", cursive;
+  background-color:#cbe0bf;
+
+}
+.btn button:hover {
+  background: rgb(75, 206, 125);
   font-size: 20px;
+}
+.test {
+  text-align: left;
+  position: relative;
+  left:700px;
+  bottom: 500px;
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 40px;
+  margin: 16px 0 0 12px;
+  height: 140px;
+  width: 40%;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+  font-family:'Merienda', cursive;
+  font-size: small;
+}
 
- }
- .test {
-    border: 2px solid #ccc;
-    background-color: #eee;
-    border-radius: 5px;
-    padding: 40px;
-    margin: 16px 0 0 12px;
-    height:140px;
-    width: 40%;
-    
-  }
-  
-  .test img {
-    float: left;
-    margin-right: 20px;
-    border-radius: 50%;
-    width:90px
-  }
-  
-  .test span {
-    float: left;
-    font-size: 20px;
-    margin-left: 15px;
-  }
-  /*.rateResult{
-    position:relative;
-    left: 50%;
-    transform:translateX(-50%);
-    bottom: -100px;
+.test img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 90px;
+}
 
-  }*/
+.test span {
+  font-size: 20px;
+}
 
- footer{
-     
-    background-color:rgb(238, 232, 232) ;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-  }
-
-  footer p{
-  font-family:'Merienda', cursive ;
-  font-size:large;
-  }
+/* footer */
+footer {
+  background-color: rgb(29, 26, 26);
+}
+footer p {
+  font-family: "Merienda", cursive;
+  font-size: large;
+  color: yellowgreen;
+  padding-bottom: 50px;
+}
+div #icons li {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+}
+#icons {
+  padding: 20px;
+}
