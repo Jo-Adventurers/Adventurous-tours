@@ -1,26 +1,49 @@
-
-html {
-  background: linear-gradient(#8790a0, #243b55);
-}
 /* styling the header */
+header {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(32, 30, 30);
+}
+.h1header {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: xx-large;
+  padding-top: 40px;
+  padding-left: 130px;
+  color: yellowgreen;
+  position: relative;
+  left: 5px;
+  font-family: "Reggae One", cursive;
+}
 #logo {
-  width: 130px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   float: left;
-  border-radius: 40%;
+  border-radius: 100%;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+header ul li {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  left: 250px;
 }
 
-#one ul {
-  width: 500px;
-  vertical-align: middle;
-  padding-top: 13px;
+header ul li a {
+  color: blanchedalmond;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
   position: relative;
-  padding-left: 770px;
-  top: 55px;
+  font-family: "Merienda", cursive;
 }
-.links:hover {
+
+.link:hover {
   transform: rotateZ(-10deg);
-  box-shadow: 0 2px 0 #444a4d;
   transition-duration: 0.5s;
   transition-delay: 0s;
   transition-timing-function: cubic-bezier(0.77, -0.7, 0.24, 1.64);
@@ -44,51 +67,42 @@ html {
   }
 }
 
-#one ul li {
-  display: inline-block;
-  margin-top: 0px;
-  margin-left: 40px;
+#dateTime {
+  background-color: rgb(59, 54, 54);
+  color: yellowgreen;
 }
-#one a {
-  color: black;
-  text-decoration: none;
-  font-family: "Merienda", cursive;
-  font-size: large;
-  font-weight: bold;
-}
-#one a:hover {
-  color: rgb(133, 131, 131);
-}
-#one {
-  background-color: rgb(238, 232, 232);
-  margin-bottom: 50px;
-  padding-bottom: 75px;
-}
-
-
 /* styling form */
 
 #formBox {
   position: relative;
-  top: 90px;
   left: 30%;
-  width: 200px;
+  width: 300px;
   padding: 100px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   color: cornsilk;
+  top: 20px;
 }
 #formBox legend {
   position: relative;
-  font-family: "Kanit", sans-serif;
+  font-family: "Reggae One", cursive;
   text-align: center;
   bottom: 70px;
+  font-size: 20px;
 }
-#formBox .inbox {
+#formBox :nth-child(2) {
   position: relative;
+  font-family: "Reggae One", cursive;
+  font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+  bottom: 70px;
 }
-#formBox .inbox input {
+#formBox label {
+  font-family: "Reggae One", cursive;
+}
+#formBox .inputText {
   position: relative;
   width: 100%;
   padding: 5px;
@@ -100,7 +114,11 @@ html {
   outline: none;
   background: transparent;
 }
-#formBox form a {
+
+#formBox p {
+  font-family: "Reggae One", cursive;
+}
+#formBox form #buttoncontainer {
   position: relative;
   display: inline-block;
   padding: 10px;
@@ -113,20 +131,25 @@ html {
   margin-top: 30px;
   letter-spacing: 4px;
 }
-
-#formBox a:hover {
-  background: #3a4849;
+#buttoncontainer #button {
+  background: rgba(56, 54, 54, 0.8);
+  border: none;
+  color: white;
+  font-size: large;
+}
+#formBox #buttoncontainer:hover {
+  background: rgba(56, 54, 54, 0.8);
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 100px #03e9f4;
 }
 
-#formBox a span {
+#formBox #buttoncontainer span {
   position: absolute;
   display: block;
 }
 
-#formBox a span:nth-child(1) {
+#formBox #buttoncontainer span:nth-child(2) {
   top: 3px;
   width: 100%;
   height: 2px;
@@ -134,7 +157,7 @@ html {
   animation: btn-anim1 1s linear infinite;
 }
 
-#formBox a span:nth-child(2) {
+#formBox #buttoncontainer span:nth-child(3) {
   right: 7px;
   width: 2px;
   height: 100%;
@@ -143,7 +166,7 @@ html {
   animation-delay: 0.25s;
 }
 
-#formBox a span:nth-child(3) {
+#formBox #buttoncontainer span:nth-child(4) {
   bottom: 3px;
   width: 100%;
   height: 2px;
@@ -152,7 +175,7 @@ html {
   animation-delay: 0.5s;
 }
 
-#formBox a span:nth-child(4) {
+#formBox #buttoncontainer span:nth-child(5) {
   left: 7px;
   width: 2px;
   height: 100%;
@@ -201,20 +224,118 @@ html {
   }
 }
 
-/* styling the footer */
-footer {
-  background-color: rgb(238, 232, 232);
-}
-footer p {
-  font-family: "Merienda", cursive;
-  font-size: large;
-}
-div #icons li {
-  display: inline-block;
-  width: 30px;
-  height: 40px;
+/* styling text Infrmation */
+#infoBox {
+  clear: both;
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  color: cornsilk;
+  width: 300px;
+  height: 400px;
+  left: 1000px;
+  bottom: 600px;
+  font-family: "Reggae One", cursive;
 }
 
-#icons {
-  padding: 20px;
+#infoBox li {
+  background-color: rgb(112, 100, 100);
+  margin: 10px;
+}
+
+/* styling the footer */
+footer {
+  clear: both;
+  background-color: rgb(32, 30, 30);
+  opacity: 0.85;
+  position: relative;
+  /* margin: 100px; */
+  width: 100%;
+}
+
+#Footerlogo {
+  float: left;
+  border-radius: 70%;
+  width: 80px;
+  height: 80px;
+  margin: 20px 50px;
+  margin-bottom: 0;
+  top: 50px;
+}
+.one {
+  top: 50px;
+  text-transform: capitalize;
+  font-size: x-large;
+  color: yellowgreen;
+  position: relative;
+  right: 50px;
+  font-family: "Reggae One", cursive;
+}
+.links1 {
+  width: 155px;
+  margin-top: 200px;
+}
+
+.links1 ul {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+.links1 ul li a {
+  color: blanchedalmond;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  font-weight: normal;
+  position: relative;
+  bottom: 100px;
+  left: 500px;
+}
+
+.links1 ul li a:hover {
+  color: rgb(252, 163, 17);
+}
+
+.contact {
+  position: relative;
+  bottom: 20px;
+  left: 130px;
+}
+
+.display li {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  margin: 10px;
+  right: 50px;
+}
+.social {
+  position: relative;
+  color: blue;
+  bottom: 200px;
+  left: 1000px;
+  width: 50px;
+  height: 50px;
+  font-size: xx-small;
+}
+
+#line {
+  padding-top: 0;
+  position: relative;
+  bottom: 127px;
+  width: 95%;
+  border-top: 2px solid blanchedalmond;
+}
+footer p {
+  clear: both;
+  position: relative;
+  bottom: 60px;
+  color: blanchedalmond;
+  font-size: large;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
 }
