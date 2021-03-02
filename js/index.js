@@ -53,107 +53,142 @@ function showSlides(n, slideshow) {
 }
  
 //  trip genretar
-let firstimg=document.getElementById('img1')
-let secoundimg=document.getElementById('img2')
-let therdimg=document.getElementById('img3')
-let imges=document.getElementById('imges')
-let firstImgIndex;
-let SecImgIndex;
-let TrdImgIndex;
-let imgarr=[];
-let inlinearr=[];
-let maxclick=0
+let firstimg=document.getElementById('img1');
+let secoundimg=document.getElementById('img2');
+let therdimg=document.getElementById('img3');
+let imges=document.getElementById('imges');
+let results=document.getElementById('resultsList');
+ let imgarr=[];
+ let imagname=[];
+ let maxclick=6;
+ function randomTrip (name,source){
+     this.name=name;
+     this.source=source;
+     this.clickCounter=0;
+     imgarr.push(this)
+     imagname.push(this.name);
+    }
+ new randomTrip ('SeaAdventure','img/seaAdevnture.png');
+ new randomTrip ('SkyAdventure','img/skyAdventure.jpeg');
+ new randomTrip ('Natural','img/naturalAdventure.jpg');
+ new randomTrip ( 'Dead Sea','img/Dead sea.jpg');
+ new randomTrip ('Camping','img/camping.jpg');
+ new randomTrip ('HistoryAdventure','img/historyAdventure.jpg');
 
-
- function RandomTrip (name,source){
-   this.name=name
-   this.source=source
-   this.click=0;
-   imgarr.push(this)
- }
- 
- new RandomTrip ('diving','img/diving rand.jpg')
- new RandomTrip ('hiking','img/hiking rand.jpg')
- new RandomTrip ('skydiving','img/skydiving rand.jpg')
- new RandomTrip ( 'wadi','img/wadi ran.jpg')
- new RandomTrip ('petra','img/jordan-top-attractions-petra.jpg')
- new RandomTrip ('rum','img/jordan-top-attractions-wadi-rum.jpg')
-
-
- function genretarRandomImg(){
-   let randomindex = Math.floor(Math.random()*imgarr.length )
-   inlinearr[0]=firstImgIndex
-   inlinearr[1]=SecImgIndex
-   inlinearr[2]=TrdImgIndex
-
-   while(inlinearr.includes(randomindex)){
-    randomindex = Math.floor(Math.random()*imgarr.length )
-   }
-   return randomindex
- }
- console.log(genretarRandomImg)
-
- function renderImgs(){
-   firstImgIndex=genretarRandomImg();
-   SecImgIndex=genretarRandomImg();
-   TrdImgIndex=genretarRandomImg();
-   while (firstImgIndex === SecImgIndex || firstImgIndex === TrdImgIndex || SecImgIndex === TrdImgIndex){
-      
-   
-
-firstImgIndex=genretarRandomImg();
-SecImgIndex=genretarRandomImg();
-
-}
-firstimg.setAttribute('src', imgarr[firstImgIndex].source); 
-secoundimg.setAttribute('src', imgarr[SecImgIndex].source);
-therdimg.setAttribute('src',imgarr[TrdImgIndex].source);
- }
-
-genretarRandomImg();
-renderImgs();
-imges.addEventListener('click', handleClicking)
-
-function handleClicking(event){
-  console.log(imgarr);
-  while(maxclick<2){
-  if(event.target.id==img1){imgarr[firstImgIndex].click++;}
-  else if(event.target.id==img2){imgarr[SecImgIndex].click++;}
-  else{imgarr[TrdImgIndex].click++;}
-  
-renderImgs();
-imgarr[firstImgIndex].click=0
-imgarr[SecImgIndex].click=0
-imgarr[TrdImgIndex].click=0
- maxclick++ }
-imges.removeEventListener('click', handleClicking)
-}
-
-
-let button =document.getElementById('button');
-button.addEventListener('click',tripAdviser);
-let monthArr=['2021-01','2021-02','2021-03','2021-04','2021-05','2021-06','2021-07','2021-08','2021-09','2021-10','2021-11','2021-12']
-
-
-
-
-
-// console.log(date12)
-
-function tripAdviser(event){
-
-  let month = document.getElementById("date").value;
-  let index = monthArr.indexOf(month) + 1;
-  if (((index >= 1 && index <= 4 )|| (index>=11 &&index<=12))&& (imgarr[3].click >=1 ||imgarr[4].click >=1 ||imgarr[5].click >=1)) {
-    console.log("cold");
-  } else if ((index >=5 && index <= 10) && (imgarr[0].click >=1 ||imgarr[1].click >=1 ||imgarr[2].click >=1)) {
-    console.log("hot");
-  } else {
-    console.log("whatever");
+ function generateRandomIndex(){   
+  let randomIndex = Math.floor(Math.random() *imgarr.length); 
+  return randomIndex;
   }
+let firstImgIndex;
+let secImgIndex;
+let trdImgIndex;
+let previousShownImg=[];
+function renderRandomImages(){
+  firstImgIndex = generateRandomIndex(); 
+  secImgIndex=generateRandomIndex();
+  trdImgIndex = generateRandomIndex(); 
+    
+    while(firstImgIndex=== secImgIndex || secImgIndex === trdImgIndex ||trdImgIndex===firstImgIndex||previousShownImg.includes(firstImgIndex)||previousShownImg.includes(secImgIndex)||previousShownImg.includes(trdImgIndex)){
+       firstImgIndex= generateRandomIndex(); 
+        secImgIndex=generateRandomIndex();
+        trdImgIndex=generateRandomIndex();
+
+    }
+    previousShownImg[0]=firstImgIndex;
+    previousShownImg[1]=secImgIndex;
+    previousShownImg[2]=trdImgIndex;
+    firstimg.setAttribute('src', imgarr[firstImgIndex].source); 
+   secoundimg.setAttribute('src',imgarr[secImgIndex].source);
+   therdimg.setAttribute('src', imgarr[trdImgIndex].source);
 
 }
+renderRandomImages();
 
+
+firstimg.addEventListener('click', handleClick);
+secoundimg.addEventListener('click', handleClick);
+therdimg.addEventListener('click', handleClick);
+let calclicks=0;
+function handleClick(event){
+    event.preventDefault();   
+    calclicks ++;
+    if(calclicks<=maxclick){
+        if(event.target.id === 'img1'){
+            imgarr[firstImgIndex].clickCounter++;
+        }else if (event.target.id ==='img2'){
+            imgarr[secImgIndex].clickCounter++;
+        } else if(event.target.id ==='img3'){
+            imgarr[trdImgIndex].clickCounter++;
+        }
+      
+        renderRandomImages();  
+        }
+    }
+    let button =document.getElementById('button');
+    button.addEventListener('click',tripAdviser);
+    let monthArr=['2021-01','2021-02','2021-03','2021-04','2021-05','2021-06','2021-07','2021-08','2021-09','2021-10','2021-11','2021-12']
+    function tripAdviser (event){
+        event.preventDefault();
+        let month = document.getElementById("date").value;
+        let index = monthArr.indexOf(month);
+        console.log(index);
+        console.log(imgarr[0].clickCounter);
+        console.log(imgarr[1].clickCounter);
+        console.log(imgarr[2].clickCounter);
+        console.log(imgarr[3].clickCounter);
+        console.log(imgarr[4].clickCounter);
+        console.log(imgarr[5].clickCounter);
+        //month 1-3
+          if (imgarr[0].clickCounter>=1 && (index>=0&&index<=2)){
+            // console.log('you can go to Aqaba ');
+            let paragraph=document.createElement('p');
+            results.appendChild(paragraph);
+            paragraph.textContent='It\'s the best time for you to go on an adventure in Aqaba';
+
+          }
+          //month 4-5
+          else if((index>=3&&index<=4)&&imgarr[1].clickCounter>=1){
+         // console.log("you can go to wadi rum");
+         let paragraph=document.createElement('p');
+         results.appendChild(paragraph);
+         paragraph.textContent='It\'s the best time for you to go on an adventure in Wadi Rum';
+          }
+          // month6-9
+         else if((index>=5&&index<=8)&&(imgarr[2].clickCounter>=1||imgarr[5].clickCounter>=1)){
+            let paragraph=document.createElement('p');
+           results.appendChild(paragraph);
+           paragraph.textContent='It\'s the best time for you to go on an adventure in Jerash';
+
+           //console.log('you can go jearsh');
+          }
+         else if(index ==9  && imgarr[4].clickCounter>=1){
+           //console.log('you can go to petra or wadi rim');
+           let paragraph=document.createElement('p');
+           results.appendChild(paragraph);
+           paragraph.textContent='It\'s the best time for you to go on an adventure in Amman';
+          }
+          //month 11-12
+          else if((index>=10&&index<=11)&&imgarr[3].clickCounter>=1){
+         //console.log('its time to visit the dead sea')
+         let paragraph=document.createElement('p');
+         results.appendChild(paragraph);
+         paragraph.textContent='It\'s the best time for you to go on an adventure in the Deadsea';
+          }
+          else{
+          let paragraph=document.createElement('p');
+         results.appendChild(paragraph);
+         paragraph.textContent='Your choice is inappropriate with the weather,try again!';
+          }
+
+          
+        
+        firstimg.removeEventListener('click', handleClick);
+       secoundimg.removeEventListener('click',handleClick);
+      therdimg.removeEventListener('click', handleClick); 
+
+    }
+
+ 
 
 
 
@@ -165,30 +200,70 @@ buttonOne.addEventListener('click',southJordan);
 function southJordan(event){
   event.preventDefault();
 
-  let namePrice=["South Jordan",50];
+  let namePrice=["Petra-Wadi Rum-Aqaba",150];
   localStorage.setItem('namePrice',JSON.stringify(namePrice));
   buttonOne.removeEventListener('click',southJordan);
 
 }
 
 let buttonTwo=document.getElementById('buttonTwo');
-buttonTwo.addEventListener('click',amman);
+buttonTwo.addEventListener('click', jw);
 
-function amman(event){
+function jw(event){
   event.preventDefault();
 
-  let namePrice=["Amman",40];
+  let namePrice=["Jerash-Wadi almujb",90];
   localStorage.setItem('namePrice',JSON.stringify(namePrice));
-  buttonTwo.removeEventListener('click',amman);
+  buttonTwo.removeEventListener('click',jw);
 }
 let buttonThree=document.getElementById('buttonThree');
-buttonThree.addEventListener('click',northJordan);
+buttonThree.addEventListener('click', ammanD);
 
-function northJordan(event){
+function ammanD(event){
   event.preventDefault();
-
-  let namePrice=["north Jordan",50];
+  let namePrice=["Amman-Dead Sea",120];
   localStorage.setItem('namePrice',JSON.stringify(namePrice));
-  buttonThree.removeEventListener('click',northJordan);
+  buttonThree.removeEventListener('click',ammanD);
+
+}
+let buttonfour=document.getElementById('buttonFour');
+buttonfour.addEventListener('click', wadi);
+
+function wadi(event){
+  event.preventDefault();
+  let namePrice=["Wadi Rum",100];
+  localStorage.setItem('namePrice',JSON.stringify(namePrice));
+  buttonfour.removeEventListener('click',wadi);
+
+}
+
+
+
+let buttonfive=document.getElementById('buttonFive');
+buttonfive.addEventListener('click',petra);
+
+function petra(event){
+  event.preventDefault();
+  let namePrice=["petra",100];
+  localStorage.setItem('namePrice',JSON.stringify(namePrice));
+  buttonfive.removeEventListener('click',petra);
+
+}
+ //slides hero Images
+ let Index = 0;
+hero();
+
+function hero() {
+  let x;
+  let y = document.getElementsByClassName("heroImagesSlides");
+  for (x = 0; x < y.length; x++) {
+    y[x].style.display = "none";  
+  }
+  Index++;
+  if (Index > y.length) {
+    Index = 1
+  }    
+  y[Index-1].style.display = "block";  
+  setTimeout(hero, 3000); 
 }
 

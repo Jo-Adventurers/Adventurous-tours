@@ -5,25 +5,35 @@
 body{
   text-align: center;
   width: 100%;
-  background-color:#222831;
-  margin: 0;
+  background-color:#cbe0bf;
+  margin: 0%;
   padding: 0%;
 }
+
 #logo{
-    width:130px;
-    height: 120px;
+    width:90px;
+    height: 80px;
     float: left;
     border-radius:40%;
  
+}
+#h1header{
+  text-align: left; 
+  font-weight: bold;
+  font-size: xx-large;
+  padding-top: 30px;
+  padding-bottom :35px; 
+  padding-left: 90px;
+  color:yellowgreen;
+  position: relative;
 }
 
 #one ul {
     width:100%;
     vertical-align: middle;
-    padding-top:13px;
     position:relative;
-    padding-left :770px;
-    top:55px;
+    padding-left:750px;
+    bottom:75px;
 }
 .links:hover{
     transform: rotateZ(-10deg);
@@ -33,12 +43,10 @@ body{
     transition-timing-function: cubic-bezier(.77,-0.7,.24,1.64);
 }
 #dateTime{
-    font-size:small;
-    color: #161616;
+    font-size:large;
+    color: yellowgreen;
     padding:10px;
-    border:solid black 1px;
     border-radius:10%;
-    background:rgb(205, 217, 221);
     animation: skew 1s cubic-bezier(0.6, -0.28, 0.735, 0.045)  infinite;
     font-family: 'DotGothic16', sans-serif;
 }
@@ -49,8 +57,6 @@ body{
 }
 
 
-
-
 #one ul li {
  display: inline-block;
  margin-top:0px;
@@ -58,10 +64,10 @@ body{
 
 }
 #one a {
-color: black;
+color: blanchedalmond;
 text-decoration:none;
 font-family:'Merienda', cursive;
-font-size: large;
+font-size:medium;
 font-weight: bold;
 }
 #one a:hover{
@@ -69,142 +75,102 @@ color: rgb(133, 131, 131);
 }
 #one {
 
-    background-color: rgb(238, 232, 232);
-    margin-bottom:50px;
-    padding-bottom:75px ;
+    background-color: rgb(32, 30, 30);
+    
+  }
+.heroImagesSlides {
+    display:flex;
+    position: relative;
+    bottom: 50px;
+    height:600px;
 }
-
-/* #two{
-    background-image: url('https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/08/A-night-in-Wadi-Rum-ss01082017.jpg');
-    background-size:1600px 600px , auto , cover;
-    padding: 6em 0 12em 0;
-    background-repeat: no-repeat;
-    height:1800px;
-    position:relative;
-    bottom:48px;
-    overflow: auto;
-    animation: nameI 3.5s  1.5s infinite ;
-    margin: 0;
-} */
-
-
-  @keyframes nameI {
-      0%{opacity: 0.9;}
-    25%{opacity:0.7;}
-      50%{opacity:0.8;}
-      75%{opacity: .0.9}
-      100%{opacity:1;}
-   
-}
-
 
 #two h1:hover{
 
     color: white;
+    transition-duration:1s;
 
 }
 #two h1,p {
   font-family: 'Merienda', cursive;
   font-weight: bolder;
   line-height:60px;
+  position: relative;
+  bottom:520px;
+  overflow: visible;
+
+  
 }
 #two h1{
 
     font-size: 50px;
-   color:rgb(168, 213, 228) ;
+   color: rgb(40, 41, 39);
+   position:relative;
   
 
 }
 
 #two p{
   font-size: large;
-  color: rgb(212, 207, 207);
-}
-footer{
-  background-color:rgb(238, 232, 232) ;
- 
-}
-footer p{
-font-family:'Merienda', cursive ;
-font-size:large;
-}
-div #icons li{
-    display: inline-block;
-    width:30px;
-    height:40px;
+  color:  rgb(32, 30, 30);
 }
 
-#icons{
-    padding: 20px;
-    
-}
 
 /* Slideshow */
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;margin:0}
 #slideshow1{
   position: relative;
- 
-  left: 150px;
+  left: 100px;
+  top:-135px;
   max-width: 40%;
   padding: auto;
-
- 
 }
 #slideshow2{
   position: relative;
-  top: -400px;
-  left: -250px;
+  top: -1220px;
+  left: 110px;
   width: 100%;
   height: 100vh;
- display: flexbox;
-  flex-direction: column;
-
-
   max-width: 40%;
-  padding: 0;
   margin: 400px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 700px;
+  margin-right: 600px;
+  display:inline-block;
+  flex-direction: column;
 }
 #slideshow3{
   position: relative;
-  top: -850px;
-  left: -250px;
-
+  top: -2500px;
+  left: -295px;
   max-width: 40%;
   padding: 0;
-
-
-
   margin: 400px;
 }
 #slideshow4{
   position: relative;
-  top: -1200px;
-  left: -250px;
- 
-
+ top: -3900px;
+  left: 350px;
+  width: 100%;
+  height: 100vh;
   max-width: 40%;
-  padding: 0;
-
-  
   margin: 400px;
+
+
+  display:inline-block;
+  flex-direction: column;
 }
 #slideshow5{
   position: relative;
-  top: -1650px;
+  top: -4800px;
   left: -250px;
-
   max-width: 40%;
   padding: 0;
- 
   height: 450px;
-
-
   margin: 400px;
 }
 
 .prev, .next {
-
 
 	height:50px;
 	width:50px;
@@ -216,6 +182,22 @@ body {font-family: Verdana,sans-serif;margin:0}
   font-size: 25px;
 
   border-radius: 0 3px 3px 0; 
+}
+
+#textTwo{
+  position: relative;
+  right:655px;
+  width:40%;
+padding: 55px;}
+
+#textThree{
+  position: relative;
+ top: -475px;
+}
+#textfour{
+  position: relative;
+  right: 1350px;
+  bottom: 485px;
 }
 
 /* Position the "next button" to the right */
@@ -235,9 +217,19 @@ body {font-family: Verdana,sans-serif;margin:0}
   background-color: rgba(104, 100, 100, 0.8);
 }
 
+strong{
+  font-size:26px;
+  color:rgb(42, 59, 16);
+  font-family:'Archivo Black', sans-serif;
+  position: relative;
+  /* left:375px;
+  top:55px; */
+  
+}
+
 /* Caption text */
 .text {
-  color: #afa7a7;
+  color: rgb(42, 59, 16);
   font-size: 25px;
   padding: 8px 12px;
   position: relative;
@@ -248,75 +240,37 @@ body {font-family: Verdana,sans-serif;margin:0}
   
 }
 
-body {
-  background-color:  #22222A;
-color: #000000;
-margin: 0px;
-
-}
 .textbeside{
   position: relative;
   left: 700px;
-  top: -550px;
+  top: -150px; 
   font-size: 12px;
- color: #bdbdd5;
-float: right;
+ color: #212122;
+/* float: right; */
 text-align: left;
 font-family: 'Archivo Black', sans-serif;
+font-size:large;
+display:inline-block;
+margin: 0px;
 }
 .slideshow-container img{
   size: 500px;
   height: 500px;
   width: 500px;
 }
-
-/* reandom trip */
-#imges img{
-  width: 350px;
-  height: 350px;
+.textBoutm{
+  text-decoration: none;
+  font-style: italic;
+  font-family:'Merienda', cursive;
+font-size: x-large;
+  color: #2a2a2b;
+  background-color: yellowgreen;
+  /* position: relative;
+  bottom:20px; */
 }
-#imges{
-  position: relative;
-  top: -900px;
-  padding: 0;
-  margin: 0;
-}
-/* .slideshow-container{
-position: relative;
-top: -700px;
-} */
-/* main{
-  padding: 0;
-  margin: 0;
-}
-body{
-  padding: 0;
-  margin: 0;
-  margin-bottom: 0;
-} */
-* {
-  margin: 0px;
-  padding: 0px;
-}
-#date{
-  position: relative;
- 
-}
-#tripbutton{
-  position: relative;
-  top: -850px;
-}
-
-#slideshow5  .textbeside{
- 
-  position: relative;
- top: -600px;
-}
-
 .book{
-  background-color: #4CAF50;
+  background-color:yellowgreen;
  border: none;
-
   padding: 15px 32px;
   text-decoration: none;
   display: inline-block;
@@ -324,11 +278,91 @@ body{
   font-size: 13px;
   margin: 4px 2px;
   cursor: pointer;
- 
+  position: relative;
+  bottom:25px;
 }
-.textBoutm{
-  text-decoration: none;
-  font-style: italic;
-  font-family: 'Oi', cursive;
-  color: #444a4d;
+#buttonTwo{
+  position: relative;
+  left: 165px;
+  top: -5px;
+}
+#buttonThree{
+  position: relative;
+  top: -5px;
+}
+#buttonFour{
+  position: relative;
+  top: -5px;
+}
+#buttonFive{
+  position: relative;
+  top: -5px;
+}
+
+
+/* trip generator */
+#tripgenerator{
+  border: rgb(46, 46, 46) solid 3px;
+  margin-bottom: 200px;
+  width: 80%;
+  margin-left: 175px;
+  
+}
+
+#imges img{
+  width: 350px;
+  height: 350px;
+  border: rgb(29, 29, 29) solid 2px;
+}
+#imges img:hover{
+  border:5px solid yellowgreen;
+}
+#tripgenerator h2{
+ font-size: 24px;
+ font-weight: bold;
+ font-family:'Merienda', cursive;
+padding: 20px; 
+color: rgb(44, 44, 44);
+}
+#tripgenerator p{
+  position: relative;
+  top:3px;
+}
+#date{
+  color: #000000;
+  font-size: x-large;
+ margin: 10px;
+ position: relative;
+ left: 90px;
+ bottom: 20px;
+
+}
+#button{
+  font-size:medium;
+  font-family:'Merienda', cursive;
+  color:rgb(27, 27, 27);
+  background-color: yellowgreen;
+  position: relative;
+  left: 90px;
+  bottom: 20px;
+}
+
+
+/* footer */
+footer{
+  background-color:rgb(29, 26, 26) ;
+}
+footer p{
+font-family:'Merienda', cursive ;
+font-size:large;
+color: yellowgreen;
+margin-top:50px;
+}
+div #icons li{
+    display: inline-block;
+    width:30px;
+    height:40px;
+}
+#icons{
+    padding: 20px;
 }

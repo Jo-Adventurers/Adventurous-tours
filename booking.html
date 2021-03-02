@@ -2,95 +2,199 @@
 <html lang="en">
   <head>
     <title>booking</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/booking.css" />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Yellowtail&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="home">
+
       <div id="one"> 
-      <img id="logo" src="img/Image from iOS (2).jpg"/>
-      <ul>
-          <li class="links"><a href="index.html">Home</a></li>
-          <li class="links"><a href="rateAndReviews.html">RATE US</a></li>
-          <li class=links><a href="about-us.html">ABOUT US</a></li>
-          <li id="dateTime"><span id="datetime"></span></li>
-      </ul>
-      </div>
-</header>
-    <main>
-      <div id="formBox">       
-        <form id="form">
-          <legend>information</legend>
-         
-            <label for="locationName">location name:</label>
-            <input type="text" id="locationName" required />
-            <br >
-         
-            <label for="yourname">Your name:</label>
-            <input type="text" id="yourname" required />
-            <br >
-        
-            <label for="phonenumber">phone number:</label>
-            <input type="number" id="phonenumber" required />
-            <br >
-         
-            <label for="email">Your email:</label>
-            <input type="email" id="email" required />
-            <br >
-        
-            <label for="numberofvisitors">number Of Visitors</label>
-            <input type="number" id="numberofvisitors" required />
-            <br >
+          <img id="logo" src="img/Capture1.PNG"/>
+          <h1 class="h1header">One life Adventure</h1>
+        </div>
+          <ul>
+              <li class="link"><a href="index.html">HOME </a></li>
+              <li class="link"><a href="rateAndReviews.html">RATE US</a></li>
+              <li class=link><a href="about-us.html">ABOUT US</a></li>
+              <li id="dateTime"><span id="datetime"></span></li>
+          </ul>
           
-              <p>check meals would you love to eat:</p>
+
+  </header>
+   
+    <main>
+      <div id="formBox">
+        <form id="form">
+          <legend>TRAVELER DETAILS</legend>
+          <legend>Experience Jordan Adventures</legend>
+          <label for="locationName">location name:</label>
+          <input type="text" id="locationName" class="inputText" required />
+          <br />
+
+          <label for="yourname">Your name:</label>
+          <input type="text" id="yourname" class="inputText" required />
+          <br />
+
+          <label for="phonenumber">phone number:</label>
+          <input type="number" id="phonenumber" class="inputText" required />
+          <br />
+
+          <label for="email">Your email:</label>
+          <input type="email" id="email" class="inputText" required />
+          <br />
+
+          <label for="numberofvisitors">number Of Visitors</label>
+          <input  type="number" id="numberofvisitors" class="inputText" required />
+          <br />
+         
+          <p>check meals would you love to eat:</p>
           <input type="checkbox" id="Mansaf" />
-          <label for="Mansaf"> Mansaf</label><br >
+          <label for="Mansaf"> Mansaf-5JD</label><br />
+
+          <label for="numberOfMeals">number Of Meals:</label>
+          <select name="numberOfMeals" id="numberOfMealsMansaf">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+
           <input type="checkbox" id="Makmora" />
-          <label for="Makmora"> Makmora</label><br >
+          <label for="Makmora"> Makmora-8JD</label><br />
+          <label for="numberOfMeals">number Of Meals:</label>
+          <select name="numberOfMeals" id="numberOfMealsMakmora">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+
           <input type="checkbox" id="Barbecue" />
-          <label for="Barbecue"> Barbecue</label><br >
+          <label for="Barbecue"> Barbecue-10JD</label><br />
+          <label for="numberOfMeals">number Of Meals:</label>
+          <select name="numberOfMeals" id="numberOfMealsBarbecue">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
           <input type="checkbox" id="Seafood" />
-          <label for="Seafood">Sea food</label><br >
-       
-          <input type="submit" id="button" value="submit" />
+          <label for="Seafood">Sea food-15JD</label><br />
+          <select name="numberOfMeals" id="numberOfMealsSeafood">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+          <div id="buttoncontainer">
+            <input type="submit" id="button" value="submit" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
         </form>
       </div>
 
-      <div id="infoBox">
-        <!-- <img src="img/images.png"/> -->
-      </div>
+      <div id="infoBox"></div>
     </main>
-    <footer>
 
-    </footer>
-    <script src="js/booking.js">
-
-    </script> 
-
-
-    <footer>
-   
-      <div>
-      <ul id="icons">
-          <li><a href=""><img src="img/fb-icon.png"/></a></li>
-          <li><a href=""><img src="img/insta-icon.png"/></a></li>
-          <li><a href=""><img src="img/twit-icon.png"/></a></li>
-          <li><a href=""><img src="img/mail-icon.png"/></a></li>
-          <li><a href=""><img src="img/gp-icon.png"/></a></li>
-      </ul>
+    <footer id="footer1">
+    
      
-      <p> 
-         All rights reseved 2021 &copy - One life adventures
-      </p>
-      </div>
-     </footer>
-     <script src="js/index.js"></script>
-     <script src="js/booking.js"></script>
+        <div id="one"> 
+        <img id='Footerlogo' src="img/Capture1.PNG" />
+      <h1 class="one">One life Adventure</h1>
+    </div>
 
+      <nav class="links1">
+          <ul>
+              <li><a href="about-us.html">about us</a></li>
+              <li class="contact"><a href="" class="droplist">contact us</a></li>
+          </ul>
+      </nav>
+
+    
+          <ul class="display">
+              <li><a href="https://facebook.com/" target="_blank"><img class="social" src="img/facebook.png" alt=""></a></li>
+              <li><a href="https://twitter.com/" target="_blank"><img class="social" src="img/twitter.png" alt=""></a></li>
+              <li><a href="https://instagram.com/" target="_blank"><img class="social" src="img/instagram.png" alt=""></a></li>
+          </ul>
+   
+      <hr id="line">
+      <p >All rights reseved 2021 © - One life adventures</p>
+  </footer>
+    <script src="js/index.js"></script>
+    <script src="js/booking.js"></script>
   </body>
 </html>
