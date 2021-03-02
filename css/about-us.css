@@ -4,7 +4,8 @@
   }
   
 main{
-  
+   width: 50%;
+   height: 100%;
     padding: 100px 38px;
     position: relative;
     min-height: 100vh;
@@ -42,7 +43,7 @@ header{
      position:relative;
      /* left :400px; */
   text-align:end;
-  right: 20px;
+  right: 90px;
      bottom: 30px;
      /* padding-left: 300px; */
  
@@ -72,7 +73,8 @@ header{
  }
  .h1{
      font-family: 'Reggae One', cursive;
- 
+   position: relative;
+   left: 400px; 
  }
  #one ul li {
   display: inline-block;
@@ -120,7 +122,11 @@ header{
     }
     
     #lastInf{
-        margin-left: 550px;
+        
+        float: right;
+        position: relative;
+        top: 150px;
+        right: 250px;
     }
     
     .inf img{
@@ -165,17 +171,15 @@ header{
     padding-top: 20px;
     }
 
-    /* .container1{
-        width: 960px;
-        position: relative;
-        left: 50%;
-        margin-left: -480px;
-    } */
+   
    .N1{
        float: left;
    }
    .N2{
        float: left;
+       position: relative;
+       left: 800px;
+       bottom: 980px;
    }
     .inf p{
     padding-bottom: 15px;
@@ -278,7 +282,7 @@ header{
        font-weight: normal;
        position: relative;
        bottom: 100px;
-        left: 675px;
+        left: 800px;
     }
    
    
@@ -296,7 +300,7 @@ header{
        position: relative;
        color: blue;
        bottom: 260px;
-       left: 1550px;
+       left: 1650px;
        width: 50px;
        height: 50px;
        font-size: xx-small;
@@ -325,7 +329,7 @@ header{
        position: relative;
        bottom: 125px;
        /* left: 800px; */
-       padding-left: 575px;
+       padding-left: 700px;
        color: blanchedalmond;
        font-size: x-large;
        font-weight: lighter;
