@@ -9,6 +9,7 @@ body{
   margin: 0%;
   padding: 0%;
 }
+
 #logo{
     width:90px;
     height: 80px;
@@ -77,8 +78,16 @@ color: rgb(133, 131, 131);
     background-color: rgb(32, 30, 30);
     
   }
+.heroImagesSlides {
+    display:flex;
+    position: relative;
+    bottom: 50px;
+    height:600px;
 
-#two{
+
+  }
+
+/* #two{
     background-image: url('https://jordantrail.org/wp-content/uploads/2020/10/Ali-Barqawi-Studios-Explore-Series-Travel-Adventure-Jordan-Trail-Thru-Hike-2018-Day-05-Beit-Idis-to-Rasoun-029-1.jpg');
     background-size:1600px 600px , auto , cover;
     padding: 14em 0 12em 0;
@@ -87,7 +96,7 @@ color: rgb(133, 131, 131);
     bottom:48px;
     overflow: hidden;
     margin: 0;
-}
+} */
 
 #two h1:hover{
 
@@ -100,12 +109,16 @@ color: rgb(133, 131, 131);
   font-weight: bolder;
   line-height:60px;
   position: relative;
-  bottom:80px;
+  bottom:520px;
+  overflow: visible;
+
+  
 }
 #two h1{
 
     font-size: 50px;
-   color: rgb(32, 30, 30);
+   color: rgb(40, 41, 39);
+   position:relative;
   
 
 }
@@ -119,25 +132,18 @@ color: rgb(133, 131, 131);
 /* Slideshow */
 #slideshow1{
   position: relative;
- 
-  left: 150px;
+  left: 100px;
+  top:-135px;
   max-width: 40%;
   padding: auto;
-  border: 5px solid  rgb(32, 30, 30);
 }
 #slideshow2{
   position: relative;
   top: -400px;
-  left: -250px;
+  left: -50px;
   width: 100%;
   height: 100vh;
- display: flexbox;
-  flex-direction: column;
-
-
   max-width: 40%;
-  padding: 0;
-  border: 5px solid  rgb(32, 30, 30);
   margin: 400px;
 }
 #slideshow3{
@@ -146,7 +152,6 @@ color: rgb(133, 131, 131);
   left: -250px;
   max-width: 40%;
   padding: 0;
-  border: 2px solid  rgb(32, 30, 30);
   margin: 400px;
 }
 #slideshow4{
@@ -156,7 +161,6 @@ color: rgb(133, 131, 131);
   max-width: 40%;
   padding: 0;  
   margin: 400px;
-  border: 2px solid  rgb(32, 30, 30);
 }
 #slideshow5{
   position: relative;
@@ -166,7 +170,6 @@ color: rgb(133, 131, 131);
   padding: 0;
   height: 450px;
   margin: 400px;
-  border: 2px solid  rgb(32, 30, 30);
 }
 
 .prev, .next {
@@ -182,6 +185,20 @@ color: rgb(133, 131, 131);
 
   border-radius: 0 3px 3px 0; 
 }
+ #slideshow2 {
+   border: solid 2px black;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 700px;
+  margin-right: 600px;
+  display:inline-block;
+  flex-direction: column;
+} 
+#textTwo{
+  position: relative;
+  right:655px;
+  width:40%;
+padding: 55px;}
 
 /* Position the "next button" to the right */
 .next {
@@ -200,9 +217,19 @@ color: rgb(133, 131, 131);
   background-color: rgba(104, 100, 100, 0.8);
 }
 
+strong{
+  font-size:26px;
+  color:rgb(42, 59, 16);
+  font-family:'Archivo Black', sans-serif;
+  position: relative;
+  /* left:375px;
+  top:55px; */
+  
+}
+
 /* Caption text */
 .text {
-  color: #afa7a7;
+  color: rgb(42, 59, 16);
   font-size: 25px;
   padding: 8px 12px;
   position: relative;
@@ -216,19 +243,44 @@ color: rgb(133, 131, 131);
 .textbeside{
   position: relative;
   left: 700px;
-  top: -550px;
+  top: -150px; 
   font-size: 12px;
- color: #bdbdd5;
-float: right;
+ color: #212122;
+/* float: right; */
 text-align: left;
 font-family: 'Archivo Black', sans-serif;
+font-size:large;
+display:inline-block;
+margin: 0px;
 }
 .slideshow-container img{
   size: 500px;
   height: 500px;
   width: 500px;
 }
-
+.textBoutm{
+  text-decoration: none;
+  font-style: italic;
+  font-family:'Merienda', cursive;
+font-size: x-large;
+  color: #2a2a2b;
+  background-color: yellowgreen;
+  /* position: relative;
+  bottom:20px; */
+}
+.book{
+  background-color:yellowgreen;
+ border: none;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  bottom:25px;
+}
 
 
 /* trip generator */
@@ -237,6 +289,7 @@ font-family: 'Archivo Black', sans-serif;
   margin-bottom: 200px;
   width: 80%;
   margin-left: 175px;
+  
 }
 
 #imges img{
