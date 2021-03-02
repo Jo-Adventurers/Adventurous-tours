@@ -106,7 +106,7 @@ renderRandomImages();
 
 
 firstimg.addEventListener('click', handleClick);
-secoundimg.addEventListener('click', handleClick)
+secoundimg.addEventListener('click', handleClick);
 therdimg.addEventListener('click', handleClick);
 let calclicks=0;
 function handleClick(event){
@@ -147,33 +147,40 @@ function handleClick(event){
 
           }
           //month 4-5
-          if((index>=3&&index<=4)&&imgarr[1].clickCounter>=1){
+          else if((index>=3&&index<=4)&&imgarr[1].clickCounter>=1){
          // console.log("you can go to wadi rum");
          let paragraph=document.createElement('p');
          results.appendChild(paragraph);
          paragraph.textContent='It\'s the best time for you to go on an adventure in Wadi Rum';
           }
           // month6-9
-          if((index>=5&&index<=8)&&(imgarr[2].clickCounter>=1||imgarr[5].clickCounter>=1)){
+         else if((index>=5&&index<=8)&&(imgarr[2].clickCounter>=1||imgarr[5].clickCounter>=1)){
             let paragraph=document.createElement('p');
            results.appendChild(paragraph);
            paragraph.textContent='It\'s the best time for you to go on an adventure in Jerash';
 
            //console.log('you can go jearsh');
           }
-          if(index ==9  && imgarr[4].clickCounter>=1){
+         else if(index ==9  && imgarr[4].clickCounter>=1){
            //console.log('you can go to petra or wadi rim');
            let paragraph=document.createElement('p');
            results.appendChild(paragraph);
            paragraph.textContent='It\'s the best time for you to go on an adventure in Amman';
           }
           //month 11-12
-          if((index>=10&&index<=11)&&imgarr[3].clickCounter>=1){
+          else if((index>=10&&index<=11)&&imgarr[3].clickCounter>=1){
          //console.log('its time to visit the dead sea')
          let paragraph=document.createElement('p');
          results.appendChild(paragraph);
          paragraph.textContent='It\'s the best time for you to go on an adventure in the Deadsea';
           }
+          else{
+          let paragraph=document.createElement('p');
+         results.appendChild(paragraph);
+         paragraph.textContent='Your choice is inappropriate with the weather,try again!';
+          }
+
+          
         
         firstimg.removeEventListener('click', handleClick);
        secoundimg.removeEventListener('click',handleClick);
@@ -193,29 +200,52 @@ buttonOne.addEventListener('click',southJordan);
 function southJordan(event){
   event.preventDefault();
 
-  let namePrice=["South Jordan",50];
+  let namePrice=["Petra-Wadi Rum-Aqaba",150];
   localStorage.setItem('namePrice',JSON.stringify(namePrice));
   buttonOne.removeEventListener('click',southJordan);
 
 }
 
 let buttonTwo=document.getElementById('buttonTwo');
-buttonTwo.addEventListener('click',amman);
+buttonTwo.addEventListener('click', jw);
 
-function amman(event){
+function jw(event){
   event.preventDefault();
 
-  let namePrice=["Amman",40];
+  let namePrice=["Jerash-Wadi almujb",90];
   localStorage.setItem('namePrice',JSON.stringify(namePrice));
-  buttonTwo.removeEventListener('click',amman);
+  buttonTwo.removeEventListener('click',jw);
 }
 let buttonThree=document.getElementById('buttonThree');
-buttonThree.addEventListener('click',northJordan);
+buttonThree.addEventListener('click', ammanD);
 
-function northJordan(event){
+function ammanD(event){
   event.preventDefault();
-  let namePrice=["north Jordan",50];
+  let namePrice=["Amman-Dead Sea",120];
   localStorage.setItem('namePrice',JSON.stringify(namePrice));
-  buttonThree.removeEventListener('click',northJordan);
+  buttonThree.removeEventListener('click',ammanD);
+
+}
+let buttonfour=document.getElementById('buttonFour');
+buttonfour.addEventListener('click',wadirum);
+
+function wadirum(event){
+  event.preventDefault();
+  let namePrice=["Wadi Rum",100];
+  localStorage.setItem('namePrice',JSON.stringify(namePrice));
+  buttonfour.removeEventListener('click',wadirum);
+
+}
+
+
+let buttonfive=document.getElementById('buttonFive');
+buttonfive.addEventListener('click',petra);
+
+function petra(event){
+  event.preventDefault();
+  let namePrice=["petra",100];
+  localStorage.setItem('namePrice',JSON.stringify(namePrice));
+  buttonfive.removeEventListener('click',petra);
+
 }
 
