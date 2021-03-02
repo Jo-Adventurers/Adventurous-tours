@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 
 
@@ -155,8 +155,7 @@ function tripAdviser(event){
 }
 
 
-<<<<<<< HEAD
-=======
+
 
 //Work to link the buttons to the book now page
 
@@ -193,4 +192,3 @@ function northJordan(event){
   buttonThree.removeEventListener('click',northJordan);
 }
 
->>>>>>> e999fa815bf4a5fa4e6d736c71e9d337b2d72392

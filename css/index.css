@@ -74,18 +74,18 @@ color: rgb(133, 131, 131);
     padding-bottom:75px ;
 }
 
-#two{
+/* #two{
     background-image: url('https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/08/A-night-in-Wadi-Rum-ss01082017.jpg');
     background-size:1600px 600px , auto , cover;
     padding: 6em 0 12em 0;
     background-repeat: no-repeat;
-    /* height:1800px; */
+    height:1800px;
     position:relative;
     bottom:48px;
     overflow: auto;
-    /* animation: nameI 3.5s  1.5s infinite ; */
+    animation: nameI 3.5s  1.5s infinite ;
     margin: 0;
-}
+} */
 
 
   @keyframes nameI {
