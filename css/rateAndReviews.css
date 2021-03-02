@@ -100,8 +100,21 @@ body{
   padding-right: 10px;
   padding-top: 0%;
 }
-.rate input {
-  display: none;
+
+
+
+  .rate input{
+      display: none;
+  }
+ .rate label{
+    float: right;
+    font-size: 75px;
+     color: lightgray;
+    margin: 0px 5px;
+    
+
+ }
+
  
 }
 .rate label {
@@ -219,12 +232,56 @@ form .btn {
   font-size: small;
 }
 
+
+ }
+ .test {
+   /*float:right;*/
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 40px;
+    margin: 16px 0 0 12px;
+    height:140px;
+    width: 40%;
+    
+  }
+  
+  .test img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width:90px
+  }
+  
+  .test span {
+   float: left;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  /*.rateResult{
+    position:relative;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: -100px;
+
+  }*/
+
+ footer{
+     
+    background-color:rgb(238, 232, 232) ;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%
+  }
+
 .test img {
   float: left;
   margin-right: 20px;
   border-radius: 50%;
   width: 90px;
 }
+
 
 .test span {
   font-size: 20px;
