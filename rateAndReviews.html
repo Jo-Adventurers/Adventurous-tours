@@ -14,6 +14,7 @@
 
 </head>
 <body>
+
   <header>
         <div id="one"> 
         <img id="logo" src="img/logo2.png"/>
@@ -24,23 +25,41 @@
         </ul>
     </header> 
     <main>
-    <div class ="container "></div>
+    <div class ="container ">
+    <h2>Rate Us </h2>
+    
+      
      <div class= "rate">
-
-         <input type="radio" id="one" name = "star" value="1"><label for="five"></label>
-         <input type="radio" id="two" name = "star" value="2"><label for="four"></label>
+      
+         <input type="radio" id="five" name = "star" value="5"><label for="five"></label>
+         <input type="radio" id="four" name = "star" value="4"><label for="four"></label>
          <input type="radio" id="three" name = "star" value="3"><label for="three"></label>
-         <input type="radio" id="four" name = "star" value="4"><label for="two"></label>
-         <input type="radio" id="five" name = "star" value="5"><label for="one"></label>
-       <span class="rateResult"> ddd </span>
-     </div>        
-         
-     <!--<span class="rateResult"> dddd </span>-->
+         <input type="radio" id="two" name = "star" value="2"><label for="two"></label>
+         <input type="radio" id="one" name = "star" value="1"><label for="one"></label>
+         <span class="rateResult"></span></div><br>
+        <form action="#" id="Box">
+          <h2>Describe us </h2>
+          <div id="textarea">
+            <textarea cols="20"rows="2"  placeholder="Enter Your name.." id = "name"></textarea>
+            <textarea cols="30"rows="5"  placeholder="Describe your experience.." id = "description"></textarea>
+          </div>
+      <div class="btn">
+        <button type="button"  onclick="showdescription();" id='submit' >Post </button>
+
+        
+      </div>
+        </form>
+            
+    
+    </div>
+    
 
 
      </div>
+<br>
 
-     <div class="test">
+
+   <!-- <div class="test">
         <img src="img/adventur1.jpg" alt="" >
         <span>XXXXXX</span> 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iste harum porro? Eos dolore autem sequi sed nam, 
@@ -58,7 +77,11 @@
         <span>XXXXXX</span> 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iste harum porro? Eos dolore autem sequi sed nam, 
           repellendus adipisci eligendi fuga maiores corrupti ab praesentium odit. Tenetur, nisi natus!</p>
-      </div>
+      </div>-->
+      <div class="test">
+       <!-- <img src="img/adventur1.jpg" alt="" >-->
+        <span id="test1"></span> 
+        <p id="test"></p>
       </div>
     </main>
     
@@ -77,5 +100,6 @@
         </p>
         </div>
        </footer>
+     <script src="js/rateAndReviews.js"></script>
 </body>
 </html>
