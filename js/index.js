@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 
 
@@ -16,6 +16,15 @@ let slideshow3=document.getElementById('slideshow3');
 slideshow3.currentSlideIndex= 1;
 showSlides(slideshow3.currentSlideIndex,slideshow3)
 
+let slideshow4=document.getElementById('slideshow4');
+slideshow4.currentSlideIndex= 1;
+showSlides(slideshow4.currentSlideIndex,slideshow4)
+
+
+
+let slideshow5=document.getElementById('slideshow5');
+slideshow5.currentSlideIndex= 1;
+showSlides(slideshow5.currentSlideIndex,slideshow5)
 
 function plusSlides(n, slideshow) {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
@@ -44,7 +53,6 @@ function showSlides(n, slideshow) {
 }
  
 //  trip genretar
-
 let firstimg=document.getElementById('img1');
 let secoundimg=document.getElementById('img2');
 let therdimg=document.getElementById('img3');
@@ -173,8 +181,9 @@ function handleClick(event){
 
     }
 
+ 
 
-
+ 
 
 //Work to link the buttons to the book now page
 
