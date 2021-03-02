@@ -227,13 +227,13 @@ function ammanD(event){
 
 }
 let buttonfour=document.getElementById('buttonFour');
-buttonfour.addEventListener('click',wadirum);
+buttonfour.addEventListener('click', wadi);
 
-function wadirum(event){
+function wadi(event){
   event.preventDefault();
   let namePrice=["Wadi Rum",100];
   localStorage.setItem('namePrice',JSON.stringify(namePrice));
-  buttonfour.removeEventListener('click',wadirum);
+  buttonfour.removeEventListener('click',wadi);
 
 }
 
