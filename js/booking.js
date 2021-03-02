@@ -1,7 +1,14 @@
 `use strict`;
-
 let arrayOfObject = [];
 
+function showlocalStorage(){
+  if (namePrice[0]){
+    let locationName=document.getElementById('locationName');
+    locationName.value= namePrice[0]; 
+  }
+}
+getLocation();
+showlocalStorage();
 const form = document.getElementById("form");
 
 const infoBox =document.getElementById("infoBox");
@@ -18,11 +25,13 @@ function booking(event) {
 
 // take the value from the form 
 while(maxClick<2){
+
   let locationName = event.target.locationName.value;
   let yourname = event.target.yourname.value;
   let phonenumber = parseInt(event.target.phonenumber.value);
   let email = event.target.email.value;
   let numberofvisitors = parseInt(event.target.numberofvisitors.value);
+  totalPrice();
   
 
 
@@ -44,7 +53,7 @@ while(maxClick<2){
 
   // create new object and assign parameter
   new AdventureBooking(locationName,yourname,phonenumber,email,numberofvisitors,meals);
-  saveToLocalStorage();
+ // saveToLocalStorage();
   createInfoBox();
   maxClick++;
 }
@@ -65,13 +74,16 @@ function AdventureBooking(locationName,yourname,phonenumber,numberofvisitors,mea
   arrayOfObject.push(this);
 }
 
-function saveToLocalStorage() {
-    let object=JSON.stringify(arrayOfObject);
-    console.log(object);
-  localStorage.setItem("trip", object);
-}
-
+// function saveToLocalStorage() {
+//     let object=JSON.stringify(arrayOfObject);
+//     console.log(object);
+//   localStorage.setItem("trip", object);
+// }
+getLocation();
 function createInfoBox(){
+  let image=document.createElement('img')
+   image.src="https://www.flaticon.com/svg/vstatic/svg/678/678307.svg?token=exp=1614588131~hmac=4872293fec7a4df70fcc61bbbe27f66d";
+    infoBox.appendChild(image);
     let ulEl=document.createElement('ul');
     infoBox.appendChild(ulEl);
 
@@ -94,6 +106,9 @@ function createInfoBox(){
     let liEl5=document.createElement('li');
     ulEl.appendChild(liEl5);
     liEl5.textContent=`the number of adventures  ${event.target.numberofvisitors.value}`;
+    let liEl8=document.createElement('li');
+    ulEl.appendChild(liEl8);
+    liEl8.textContent=`The total price of you trip is ${price}`
 
     let liEl7=document.createElement('li');
     ulEl.appendChild(liEl7);
@@ -107,3 +122,25 @@ function createInfoBox(){
     }
 
 }
+ 
+// link the buttons in home page to this page.
+function getLocation(){
+let locationPrice=localStorage.getItem('namePrice');
+let getLocationPrice=JSON.parse(locationPrice);
+if(getLocationPrice){
+namePrice=getLocationPrice;
+}
+}
+
+let price=1;
+
+function totalPrice(){
+  
+  if(namePrice[1]){
+   price=parseInt(event.target.numberofvisitors.value)*parseInt(namePrice[1]);
+    
+  }
+ return price;
+}
+
+
