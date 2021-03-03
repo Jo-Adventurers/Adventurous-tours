@@ -58,5 +58,17 @@ if (!ratings) {
 
 
 
+function showdescription(){
+  
+ 
+  let inputVal= document.getElementById('description').value;
+  document.getElementById('test').textContent=inputVal;
+  let inputVal1= document.getElementById('name').value;
+  document.getElementById('test1').textContent=inputVal1;
+  console.log(inputVal);
+  console.log(inputVal);
+}
+ButtonEl.removeEventListener('click',showdescription);
 
-
+let name=document.getElementById('name');
+name.textContent=``;

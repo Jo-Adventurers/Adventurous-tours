@@ -79,6 +79,7 @@ body{
   bottom: 50px;
   height:600px;
 }
+
 /* styling body */
 .container {
   position: relative;
@@ -214,19 +215,30 @@ form .btn {
   width: 90px;
 } */
 #main p {
-  font-size: 20px;
-}
+  font-size: 20px;}
 /* styling images photo */
 div.gallery {
   border: 1px solid #ccc;
   position: relative;
   bottom: 100px;
 }
+
+
 div.gallery:hover {
   border: 1px solid #777;
 }
 div.gallery img {
   width: 100%;
+}
+
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+ 
 }
 div.desc {
   padding: 15px;
@@ -237,18 +249,24 @@ div.desc {
   float: left;
   width: 24.99999%;
 }
+
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .responsive {
     width: 100%;
   }
 }
 #gallary .photo{position: relative; width: 30px;}
+
+
+#gallary .photo{position: relative; width: 30px;}
+
 /* footer */
 footer {
   clear: both;
