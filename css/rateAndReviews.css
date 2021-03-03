@@ -85,6 +85,7 @@ body{
 
 /* styling body */
 
+main{overflow: hidden;}
 .container {
   position: relative;
   width: 40%;
@@ -170,7 +171,20 @@ body{
 .rate #one:checked ~ .rateResult::before {
   content: " Sorry for That 😪";
 }
+form input{
 
+  height: 90%;
+  width: 90%;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+  background-color:#8dad7a;
+  margin: 5px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
 form textarea {
   height: 90%;
   width: 90%;
@@ -226,14 +240,60 @@ form .btn {
   font-size: small;
 }
 
-.test img {
+#main {
+  text-align: left;
+  position: relative;
+  left:700px;
+  bottom: 650px;
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 40px;
+  margin: 16px 0 0 12px;
+  height: 140px;
+  width: 40%;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+  font-family: 'Viga', sans-serif;
+  font-size: small;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+}
+#main img{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  max-height: 120px;
+}
+#main{
+background-image: url(https://thumbs.dreamstime.com/b/petra-icon-vector-data:image/png;base64,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-symbol-isolated-white-background-petra-icon-vector-isolated-white-background-your-web-133827441.jpg);
+background-repeat: no-repeat;
+background-position: right;
+background-size: 80px;}
+
+#main:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+ #user{
+  font-weight: 600;
+  font-family: 'Viga', sans-serif;
+
+
+}
+@media(max-width: 990px){
+  #main{
+    margin: 20px;
+  }
+} 
+/* .test img {
   float: left;
   margin-right: 20px;
   border-radius: 50%;
   width: 90px;
-}
-
-.test span {
+} */
+#main p {
   font-size: 20px;
 }
 
