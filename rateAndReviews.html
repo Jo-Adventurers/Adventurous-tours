@@ -5,26 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&#9734 Rate Us </title>
-    
-    
-
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/rateAndReviews.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
-
    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
-
   </head>
 <body>
-
   <header>
-    <div id="one"> 
+    <div id="one">
     <img id="logo" src="img/Capture1.PNG"/>
     <h1  id="h1header">One Life Adventure</h1>
     <ul>
@@ -35,38 +27,33 @@
     </ul>
     </div>
 </header>
-    <main>
+    <main >
     <div class ="container ">
     <h2>Rate Us </h2>
-    
-      
      <div class= "rate">
-      
          <input type="radio" id="five" name = "star" value="5"><label for="five"></label>
          <input type="radio" id="four" name = "star" value="4"><label for="four"></label>
          <input type="radio" id="three" name = "star" value="3"><label for="three"></label>
          <input type="radio" id="two" name = "star" value="2"><label for="two"></label>
          <input type="radio" id="one" name = "star" value="1"><label for="one"></label>
-         <span class="rateResult"></span></div><br>
+         <span class="rateResult" id="rateResult"></span></div><br>
         <form action="#" id="Box">
           <h2>Describe us </h2>
           <div id="textarea">
-            <textarea cols="20"rows="2"  placeholder="Enter Your name.." id = "name"></textarea>
-            <textarea cols="30"rows="5"  placeholder="Describe your experience.." id = "description"></textarea>
+            <input class="userInput" placeholder="Enter Your name.." id = "name">
+            <textarea class ="userText"cols="30"rows="5"  placeholder="Describe your experience.." id = "description"></textarea>
           </div>
       <div class="btn">
-        <button type="button"  onclick="showdescription();" id='submit' >Post </button>  
+        <button type="button"  onclick=" submitResults();" id='submit' >Post </button>
       </div>
-        </form>        
-    
+        </form>
     </div>
+  </div>
 <br>
-      <div class="test">
-        <span id="test1"></span> 
-        <p id="test"></p>
-      </div>
+<!--<div id="main"></div>
+   <div class="test" id="results">
+   </div>-->
     </main>
-    
     <footer>
       <div>
       <ul id="icons">
@@ -76,11 +63,11 @@
           <li><a href=""><img src="img/mail-icon.png"/></a></li>
           <li><a href=""><img src="img/gp-icon.png"/></a></li>
       </ul>
-      <p> 
+      <p>
          All rights reseved 2021 &copy - One life adventures
       </p>
       </div>
-     </footer>     
+     </footer>
      <script src="js/rateAndReviews.js"></script>
      <script>
       var dt = new Date();
@@ -88,3 +75,8 @@
       </script>
 </body>
 </html>
+
+
+
+
+
