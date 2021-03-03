@@ -1,3 +1,4 @@
+  
 *{
   box-sizing: border-box;
 }
@@ -8,6 +9,8 @@ body{
   background-color:#cbe0bf;
   margin: 0%;
   padding: 0%;
+  height:fit-content;
+ 
 }
 
 #logo{
@@ -114,20 +117,24 @@ color: rgb(133, 131, 131);
   font-size: large;
   color:  rgb(32, 30, 30);
 }
-
+#two{
+  margin: 0px;
+  padding-bottom: 0px;
+  height: 600px;
+}
 
 /* Slideshow */
 #slideshow1{
   position: relative;
   left: 100px;
-  top:-135px;
+  top:-20px;
   max-width: 40%;
   padding: auto;
 }
 #slideshow2{
   position: relative;
-  top: -1220px;
-  left: 110px;
+   top: -1220px; 
+   /* left: 110px; */
   width: 100%;
   height: 100vh;
   max-width: 40%;
@@ -138,19 +145,19 @@ color: rgb(133, 131, 131);
   margin-right: 600px;
   display:inline-block;
   flex-direction: column;
-}
+} 
 #slideshow3{
   position: relative;
-  top: -2500px;
-  left: -295px;
+  top: -2300px;
+  /* left: -295px; */
   max-width: 40%;
   padding: 0;
   margin: 400px;
 }
 #slideshow4{
   position: relative;
- top: -3900px;
-  left: 350px;
+ top: -3700px;
+  /* left: 350px; */
   width: 100%;
   height: 100vh;
   max-width: 40%;
@@ -162,7 +169,7 @@ color: rgb(133, 131, 131);
 }
 #slideshow5{
   position: relative;
-  top: -4800px;
+  top: -4700px;
   left: -250px;
   max-width: 40%;
   padding: 0;
@@ -183,34 +190,59 @@ color: rgb(133, 131, 131);
 
   border-radius: 0 3px 3px 0; 
 }
-<<<<<<< HEAD
+main{
+  margin: 0px;
+  padding: 0px;
+  height: 6700px;
+  overflow: hidden;
+ 
+}
+#textOne{
+  padding: 0px;
+  margin: 0px;
+  /* display: inline-block; */
+}
+#textOne p{
+  margin-left: 650px;
+  width: 90%;
+  display: inline-block; 
+position: relative;
+bottom:650px;
+}
+/* }
  #slideshow2 {
   position: relative;
-  top: -1640px;
-  left: -270px;
+   top: -1100px; 
+  left: 730px;
   width: 100%;
   height: 100vh;
  display: flexbox;
   flex-direction: column;
-} 
-=======
+}   */
 
->>>>>>> f5ede076c3e5c344fb38cbac0549dc733cc28889
 #textTwo{
   position: relative;
-  right:655px;
-  width:40%;
+  left: 40px;
+  width:50%;
 padding: 55px;
 display:inline-block}
 
 #textThree{
   position: relative;
- top: -475px;
-}
+ top: -140px; 
+ margin-left: 670px;
+ width: 90%;
+} 
 #textfour{
   position: relative;
-  right: 1350px;
-  bottom: 485px;
+  right: 670px;
+  bottom: 695px;
+}
+#textFive{
+  position: relative;
+  margin-left: 670px;
+  width: 80%;
+  top:-670px;
 }
 
 /* Position the "next button" to the right */
@@ -218,12 +250,14 @@ display:inline-block}
   float: right;
   right: 0;
   border-radius: 15px 50px 0 15px;
+  color: yellowgreen;
 }
 
 .prev {
   float: left;
   right: 0;
   border-radius:50px 0 15px 15px;
+  color: yellowgreen;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -235,6 +269,7 @@ strong{
   color:rgb(42, 59, 16);
   font-family:'Archivo Black', sans-serif;
   position: relative;
+  display: inline;
   /* left:375px;
   top:55px; */
   
@@ -255,21 +290,26 @@ strong{
 
 .textbeside{
   position: relative;
-  left: 700px;
-  top: -150px; 
-  font-size: 12px;
+  /* left: 700px; */
+  /* top: -150px;  */
+  /* font-size: 12px; */
  color: #212122;
 /* float: right; */
 text-align: left;
 font-family: 'Archivo Black', sans-serif;
 font-size:large;
 display:inline-block;
-margin: 0px;
+margin: 43px;
+height: fit-content;
 }
 .slideshow-container img{
   size: 500px;
   height: 500px;
   width: 500px;
+}
+.slideshow-container{
+  margin: 0px;
+  height: fit-content;
 }
 .textBoutm{
   text-decoration: none;
@@ -280,6 +320,7 @@ font-size: x-large;
   background-color: yellowgreen;
   /* position: relative;
   bottom:20px; */
+  margin-bottom: 30px;
 }
 .book{
   background-color:yellowgreen;
@@ -316,10 +357,13 @@ font-size: x-large;
 /* trip generator */
 #tripgenerator{
   border: rgb(46, 46, 46) solid 3px;
-  margin-bottom: 200px;
+  /* margin-bottom:200px; */
   width: 80%;
   margin-left: 175px;
-  
+  position: relative;
+  bottom:4100px;
+
+
 }
 
 #imges img{
@@ -364,18 +408,32 @@ color: rgb(44, 44, 44);
 /* footer */
 footer{
   background-color:rgb(29, 26, 26) ;
+  /* position:relative;
+  bottom: 4000px; */
+  margin-top: 0px;
+  z-index: 3;
+  margin-bottom: 0;
+  padding-top: 0px;
+  height:200px;
+  
 }
 footer p{
 font-family:'Merienda', cursive ;
 font-size:large;
 color: yellowgreen;
-margin-top:50px;
+clear: both;
+position: relative;
+bottom:5px;
 }
 div #icons li{
     display: inline-block;
     width:30px;
     height:40px;
+
 }
 #icons{
     padding: 20px;
+}
+div{
+  margin:0 auto;
 }
