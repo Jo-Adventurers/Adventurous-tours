@@ -107,7 +107,7 @@ getLocation();
 // create info box in the page
 function createInfoBox(){
   let image=document.createElement('img')
-   image.src="https://www.flaticon.com/svg/vstatic/svg/678/678307.svg?token=exp=1614705880~hmac=24bc591af4a8f99cebbec4fff5395b74";
+   image.src="img/adventure.png";
    infoBox.appendChild(image);
     let ulEl=document.createElement('ul');
     infoBox.appendChild(ulEl);
@@ -140,7 +140,7 @@ function createInfoBox(){
 
     let liEl8=document.createElement('li');
     ulEl.appendChild(liEl8);
-    liEl8.textContent=`The total price of you trip is ${price}`
+    liEl8.textContent=`The total price of you trip is ${price} JD`
 
     let liEl7=document.createElement('li');
     ulEl.appendChild(liEl7);
@@ -209,7 +209,7 @@ function createAlert(){
 // date of adventure
 function setTimeOfTrip(){
   let timeOFTrip= dt;
-  timeOFTrip.setDate(15);
+  timeOFTrip.setDate(timeOFTrip.getDay()+ 15);
   timeOFTrip.setHours(8,0,0)
   return timeOFTrip.toLocaleString();
 }
