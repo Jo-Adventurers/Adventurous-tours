@@ -35,3 +35,6 @@ function showdescription(){
   console.log(inputVal);
 }
 ButtonEl.removeEventListener('click',showdescription);
+
+let name=document.getElementById('name');
+name.textContent=``;
