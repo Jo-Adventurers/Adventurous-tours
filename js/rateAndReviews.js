@@ -1,13 +1,5 @@
 'use strict';
 
-//let ButtonEl = document.getElementById('submit');
-
-
-
-
-
-
-
 
 //let userName = document.getElementById('name').value;
 //document.getElementById('results').textContent = userName;

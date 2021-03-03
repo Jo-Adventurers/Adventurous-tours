@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 /* styling the header */
-
 body{
   text-align: center;
   width: 100%;
@@ -26,7 +25,6 @@ body{
   color: yellowgreen;
   position: relative;
 }
-
 #one ul {
   width: 100%;
   vertical-align: middle;
@@ -36,7 +34,7 @@ body{
 }
 .links:hover {
   transform: rotateZ(-10deg);
-  box-shadow: 0 2px 0 #444a4d;
+  box-shadow: 0 2px 0 #444A4D;
   transition-duration: 0.5s;
   transition-delay: 0s;
   transition-timing-function: cubic-bezier(0.77, -0.7, 0.24, 1.64);
@@ -57,7 +55,6 @@ body{
     transform: skewX(-3deg);
   }
 }
-
 #one ul li {
   display: inline-block;
   margin-top: 0px;
@@ -84,7 +81,6 @@ body{
 }
 
 /* styling body */
-
 main{overflow: hidden;}
 .container {
   position: relative;
@@ -92,7 +88,7 @@ main{overflow: hidden;}
   height: 30%;
   background-color:#8dad7a;
   border-radius: 50px;
-  border: 5px solid #aac29d;
+  border: 5px solid #AAC29D;
 }
 .container h2 {
   font-size: 30px;
@@ -110,7 +106,6 @@ main{overflow: hidden;}
 }
 .rate input {
   display: none;
- 
 }
 .rate label {
   float: right;
@@ -118,11 +113,9 @@ main{overflow: hidden;}
   color: lightgray;
   margin: 0px 5px;
 }
-
 .rate label::before {
   content: "★";
 }
-
 .rate input:checked ~ label {
   color: gold;
 }
@@ -130,7 +123,6 @@ main{overflow: hidden;}
 .rate input:not(:checked) ~ label:hover ~ label {
   color: gold;
 }
-
 .rate input:checked ~ label:hover,
 .rate input:checked ~ label:hover ~ label {
   color: gold;
@@ -152,25 +144,22 @@ main{overflow: hidden;}
 .rate input:checked ~ .rateResult::before {
   display: block;
 }
-
 .rate #five:checked ~ .rateResult::before {
-  content: "It's Greate  😍";
+  content: "It's Greate 😍 ";
 }
-
 .rate #four:checked ~ .rateResult::before {
   content: "Awesome 😉";
 }
-
 .rate #three:checked ~ .rateResult::before {
   content: "That's Good 😊";
 }
-
 .rate #two:checked ~ .rateResult::before {
-  content: "Mmmm  😞";
+  content: "Mmmm  😔";
 }
 .rate #one:checked ~ .rateResult::before {
-  content: " Sorry for That 😪";
+  content: " Sorry for That😪 ";
 }
+
 form input{
 
   height: 90%;
@@ -185,6 +174,7 @@ form input{
   margin: 5px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
 }
+
 form textarea {
   height: 90%;
   width: 90%;
@@ -198,15 +188,12 @@ form textarea {
   margin: 5px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
 }
-
 form .btn {
   height: 45px;
   width: 100%;
   margin: 15px 0;
- 
 }
 .btn button {
- 
   border: 1px solid rgb(189, 214, 189);
   border-radius: 5px;
   outline: none;
@@ -217,13 +204,12 @@ form .btn {
   cursor: pointer;
   font-family: "Merienda", cursive;
   background-color:#cbe0bf;
-
 }
 .btn button:hover {
   background: rgb(75, 206, 125);
   font-size: 20px;
 }
-.test {
+#main {
   text-align: left;
   position: relative;
   left:700px;
@@ -239,6 +225,7 @@ form .btn {
   font-family:'Merienda', cursive;
   font-size: small;
 }
+
 
 #main {
   text-align: left;
@@ -304,6 +291,15 @@ div.gallery {
   bottom: 100px;
 }
 
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+}
+
+
 div.gallery:hover {
   border: 1px solid #777;
 }
@@ -312,7 +308,6 @@ div.gallery img {
   width: 100%;
  
 }
-
 div.desc {
   padding: 15px;
   text-align: center;
@@ -335,6 +330,8 @@ div.desc {
     width: 100%;
   }
 }
+#gallary .photo{position: relative; width: 30px;}
+
 
 #gallary .photo{position: relative; width: 30px;}
 
@@ -357,3 +354,8 @@ div #icons li {
 #icons {
   padding: 20px;
 }
+
+
+
+
+
