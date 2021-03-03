@@ -109,10 +109,10 @@ color: rgb(133, 131, 131);
   max-width: 40%;
   padding: auto;
 }
-#slideshow2{
+ #slideshow2{
   position: relative;
-   top: -1220px; 
-   left: 110px;
+   top: -450px; 
+   left: 700px;
   width: 100%;
   height: 100vh;
   max-width: 40%;
@@ -123,10 +123,10 @@ color: rgb(133, 131, 131);
   margin-right: 600px;
   display:inline-block;
   flex-direction: column;
-} 
+}  
 #slideshow3{
   position: relative;
-  top: -2300px;
+  top: -1600px;
   left: -295px;
   max-width: 40%;
   padding: 0;
@@ -134,8 +134,8 @@ color: rgb(133, 131, 131);
 }
 #slideshow4{
   position: relative;
- top: -3700px;
-  left: 350px;
+ top: -2900px;
+  left: 360px;
   width: 100%;
   height: 100vh;
   max-width: 40%;
@@ -145,8 +145,8 @@ color: rgb(133, 131, 131);
 }
 #slideshow5{
   position: relative;
-  top: -4700px;
-  left: -250px;
+  top: -3800px;
+  left: -320px;
   max-width: 40%;
   padding: 0;
   height: 250px;
@@ -166,46 +166,49 @@ color: rgb(133, 131, 131);
 main{
   margin: 0px;
   padding: 0px;
-height: 5400px !important ;
+height: 4600px !important ;
 overflow: hidden;
 }
 #textOne p{
   margin-left:600px;
-  width: 90%;
+  width: 110%;
   display: inline-block; 
 position: relative;
 bottom:650px;
 }
- #slideshow2 {
+ /* #slideshow2 {
   position: relative;
-   top: -1100px; 
+   top: -1200px; 
   left: 730px;
   width: 100%;
   height: 100vh;
  display: flexbox;
   flex-direction: column;
-}  
+}   */
 #textTwo{
   position: relative;
-  left: 40px;
-  width:50%;
+  left: -760px;
+  bottom:730px;
+  width:120%;
 padding: 55px;
-display:inline-block}
+display:inline-block;
+}
 #textThree{
   position: relative;
  top: -140px; 
  margin-left:650px;
- width: 90%;
+ width: 110%;
 } 
 #textfour{
   position: relative;
-  right: 670px;
-  bottom: 695px;
+  right: 770px;
+  bottom: 675px;
+  width:130%;
 }
 #textFive{
   position: relative;
   margin-left:600px;
-  width: 80%;
+  width: 140%;
   top:-670px;
 }
 /* Position the "next button" to the right */
@@ -254,10 +257,11 @@ strong{
 /* float: right; */
 text-align: left;
 font-family: 'Archivo Black', sans-serif;
-font-size:large;
+font-size:medium;
 display:inline-block;
 margin: 43px;
 height: fit-content;
+width:90%;
 }
 .slideshow-container img{
   size: 500px;
@@ -294,7 +298,7 @@ font-size: x-large;
 }
 #buttonTwo{
   position: relative;
-  left: 165px;
+  left: 35px;
   top: -5px;
 }
 #buttonThree{
@@ -312,11 +316,12 @@ font-size: x-large;
 /* trip generator */
 #tripgenerator{
   border: rgb(46, 46, 46) solid 3px;
-  /* margin-bottom:200px; */
+  margin-top:750px;
   width: 80%;
-  margin-left: 175px;
+  margin-left: 155px;
   position: relative;
   bottom:4100px;
+  background-color: #85947c;
 }
 #imges img{
   width: 350px;
@@ -342,7 +347,7 @@ color: rgb(44, 44, 44);
   font-size: x-large;
  margin: 10px;
  position: relative;
- left: 90px;
+ left: 20px;
  bottom: 20px;
 }
 #button{
@@ -351,7 +356,7 @@ color: rgb(44, 44, 44);
   color:rgb(27, 27, 27);
   background-color: yellowgreen;
   position: relative;
-  left: 90px;
+  left:20px;
   bottom: 20px;
 }
 /* footer */
