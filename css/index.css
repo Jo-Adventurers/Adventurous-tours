@@ -170,7 +170,7 @@ height: 5400px !important ;
 overflow: hidden;
 }
 #textOne p{
-  margin-left:550px;
+  margin-left:600px;
   width: 90%;
   display: inline-block; 
 position: relative;
@@ -194,7 +194,7 @@ display:inline-block}
 #textThree{
   position: relative;
  top: -140px; 
- margin-left:550px;
+ margin-left:650px;
  width: 90%;
 } 
 #textfour{
@@ -204,7 +204,7 @@ display:inline-block}
 }
 #textFive{
   position: relative;
-  margin-left:550px;
+  margin-left:600px;
   width: 80%;
   top:-670px;
 }
