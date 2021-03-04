@@ -24,7 +24,7 @@ body{
   font-weight: bold;
   font-size: xx-large;
   padding-top: 30px;
-  /* padding-bottom: 25px; */
+  padding-bottom: 35px;
   padding-left: 90px;
   color: yellowgreen;
   position: relative;
@@ -34,7 +34,7 @@ body{
   vertical-align: middle;
   position: relative;
   padding-left: 760px;
-  bottom: 25px;
+  bottom: 75px;
 }
 .links:hover {
   transform: rotateZ(-10deg);
@@ -418,8 +418,3 @@ div #icons li {
 #icons {
   padding: 20px;
 }
-
-        
-         
-
-
