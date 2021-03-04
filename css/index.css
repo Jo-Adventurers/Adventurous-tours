@@ -316,12 +316,13 @@ font-size: x-large;
 /* trip generator */
 #tripgenerator{
   border: rgb(46, 46, 46) solid 3px;
+  border-radius: 10%;
   margin-top:750px;
   width: 80%;
   margin-left: 155px;
   position: relative;
   bottom:4100px;
-  background-color: #85947c;
+  background-color: #202020;
 }
 #imges img{
   width: 350px;
@@ -336,11 +337,12 @@ font-size: x-large;
  font-weight: bold;
  font-family:'Merienda', cursive;
 padding: 20px; 
-color: rgb(44, 44, 44);
+color:yellowgreen;
 }
 #tripgenerator p{
   position: relative;
   top:3px;
+  color: yellowgreen;
 }
 #date{
   color: #000000;
