@@ -1,5 +1,13 @@
 'use strict';
 
+//let ButtonEl = document.getElementById('submit');
+
+
+
+
+
+
+
 
 //let userName = document.getElementById('name').value;
 //document.getElementById('results').textContent = userName;
@@ -30,7 +38,7 @@ function radioValue() {
 function submitResults() {
   let userName = document.getElementById("name").value;
   let userDescription = document.getElementById('description').value;
-  document.getElementById('rateResult') ;
+  
 
   console.log(userDescription)
   let current = JSON.parse(ratings);
@@ -82,3 +90,4 @@ let ratings = localStorage.getItem('ratings')
 if (!ratings) {
   localStorage.setItem('ratings', JSON.stringify([]));
 }
+
