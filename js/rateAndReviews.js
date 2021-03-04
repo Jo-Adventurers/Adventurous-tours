@@ -90,3 +90,4 @@ let ratings = localStorage.getItem('ratings')
 if (!ratings) {
   localStorage.setItem('ratings', JSON.stringify([]));
 }
+
