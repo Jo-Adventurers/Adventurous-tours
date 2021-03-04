@@ -213,4 +213,3 @@ function setTimeOfTrip(){
   timeOFTrip.setHours(8,0,0)
   return timeOFTrip.toLocaleString();
 }
-
