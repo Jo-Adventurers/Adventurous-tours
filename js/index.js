@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 
 
@@ -190,7 +190,7 @@ function handleClick(event){
 
  
 
- 
+
 
 //Work to link the buttons to the book now page
 
@@ -236,6 +236,7 @@ function wadi(event){
   buttonfour.removeEventListener('click',wadi);
 
 }
+
 
 
 let buttonfive=document.getElementById('buttonFive');
